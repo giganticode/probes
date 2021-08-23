@@ -16,7 +16,7 @@ If you do not have anaconda installed, please check the installation instruction
 3. Once we are done with that, we will clone this github repository and `cd` into it.
 
    ```
-      $ git clone https://github.com/ms-anon/probes.git && cd probes/
+      $ git clone https://github.com/giganticode/probes.git && cd probes/
    ```
 
 4. Next we will install all the necessary packages in the *requirements.txt* file
