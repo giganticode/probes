@@ -165,7 +165,7 @@ if __name__ == "__main__":
                     'graphCodeBERT': 13,}
 
     label_counts  = ['10k']
-    task_codes    = ['AST', 'LEN', 'CPX', 'TYP']
+    task_codes    = ['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
     nhids         = [0] # number of hidden layers
 
     for task_code in task_codes:
