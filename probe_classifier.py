@@ -160,11 +160,11 @@ if __name__ == "__main__":
 
     shuffle_kinds = ['ORIG']
     model_kinds   = {'BERT':         13, 
-                    'codeBERT':      13,
-                    'codeBERTa':      7,
-                    'graphCodeBERT': 13,}
+                    'CodeBERT':      13,
+                    'CodeBERTa':      7,
+                    'GraphCodeBERT': 13,}
 
-    label_counts  = ['10k']
+    label_counts  = ['1k']
     task_codes    = ['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
     nhids         = [0] # number of hidden layers
 

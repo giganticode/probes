@@ -1,0 +1,100 @@
+tr	8	public JSONArray put ( int index , double value ) throws JSONException { put ( index , new double ( value ) ) ; return this ; }
+tr	7	public boolean isNull ( String key ) { return JSONObject . null . equals ( this . opt ( key ) ) ; }
+tr	3	public TitleImp ( ) { this . line = new LineImp ( this ) ; }
+tr	5	@ Override public synchronized void removeNotify ( ) { this . applet . shutdown ( ) ; super . removeNotify ( ) ; }
+tr	9	@ Override public String toString ( ) { String dato = this . codigo + "-" + cliente + "-" + saldo + " lps en saldo." ; return dato ; }
+tr	10	public TasquesPendents ( String any , IClient client ) { this . client = client ; this . any = any ; initialize ( ) ; }
+tr	6	private boolean isPreconditionsFilled ( Path absFilePath ) { if ( ! canWriteSelectedFile ( absFilePath ) ) { return false ; } if ( ! canWriteWithDefaultOriginalClassConstructor ( ) ) { return false ; } return true ; }
+tr	4	public List < Campaign > getCamlist ( ) { return camlist ; }
+tr	2	private void finaliza ( ) { this . dispose ( ) ; }
+tr	2	public String getTestingModeAnswer ( ) { return "Test Answer" ; }
+tr	5	public java . awt . Frame getFrame ( ) { return parent ; }
+tr	1	public int process_id ( ) { return 2 ; }
+tr	6	public static String getPassword ( String password ) { return getProperty ( "weibo4j.password" , password ) ; }
+tr	9	public BIOSwitch ( String onString , String offString ) { super ( onString ) ; create ( ) ; setOffString ( offString ) ; }
+tr	4	public void isiOperan2 ( double x ) { op2 = x ; }
+tr	10	@ Override public int read ( WritableByteChannel channel ) throws IOException { int read = read ( channel , getReadableBytes ( ) , null ) ; return read ; }
+tr	10	@ Test public void revers_on_empty_list_should_be_equals_to_itself ( ) { DoubleLinkedList list = new DoubleLinkedList ( ) ; assertEquals ( utils . reverse ( list ) , list ) ; }
+tr	3	public static void showNewTimeWindow ( ) { timeBo . showNewTime ( ) ; }
+tr	2	public long getTimeToWait ( ) { return this . timeToWait ; }
+tr	8	@ Override public void setText ( String Text ) { this . SetText ( Text , Color . white ) ; }
+tr	5	@ Override public PLType getType ( ) { return PLType . PLNull ; }
+tr	9	public void start ( ) { this . setPlayingOrder ( player1 , player2 ) ; this . board . clearTheBoard ( ) ; this . setStatus ( Game . NEW_GAME ) ; }
+tr	5	@ Override public void close ( ) throws IOException { in . close ( ) ; }
+tr	7	public Object accept ( ASTVisitor visitor ) throws DatabaseException { return visitor . visit ( this ) ; }
+tr	1	public Position ( ) { }
+tr	6	public static ServiceFactory getInstance ( ) { if ( instance == null ) instance = new ServiceFactory ( ) ; return instance ; }
+tr	8	public UnitOfWork with ( Object [ ] contextObjectArray ) { this . ctx = new business . Context ( contextObjectArray ) ; return this ; }
+tr	2	public Tela_Usuario_Cadastro ( ) { initComponents ( ) ; }
+tr	9	@ Override public int getColumnAmount ( ) { if ( this . optionTextFields [ 1 ] . getText ( ) . equals ( "" ) ) return 0 ; return Integer . parseInt ( this . optionTextFields [ 1 ] . getText ( ) ) ; }
+tr	7	@ Override public TileEntity getTileEntity ( Tile parent ) { return new TileDoorEntity ( parent ) ; }
+tr	6	public static BasicRelation getEquivalenceRelation ( ) { BasicRelation rel = new BasicRelation ( "=" ) ; return rel ; }
+tr	8	public BaseLight ( Vector3f color , float intensity ) { this . color = color ; this . intensity = intensity ; }
+tr	10	public List < String > complete ( String string , int position ) { return CompletionUtil . completeStrings ( strings , string ) ; }
+tr	5	@ Override public MessageType getMessageType ( ) { return MessageType . EXITCHATROOM ; }
+tr	9	public AddOrigen ( java . awt . Frame parent , boolean modal ) { super ( parent , modal ) ; initComponents ( ) ; }
+tr	1	public boolean blocksLineOfSight ( ) { return false ; }
+tr	2	public short [ ] [ ] action_table ( ) { return _action_table ; }
+tr	3	public void delete ( ) { Dispatch . call ( this , "Delete" ) ; }
+tr	1	public Prenotazione ( ) { super ( ) ; }
+tr	3	public String getSendTime ( ) { return sendTime ; }
+tr	4	@ Override public String getSchema ( ) throws SQLException { return null ; }
+tr	7	private char peekNextChar ( ) { if ( pos < ( input . length ( ) - 1 ) ) { return input . charAt ( pos + 1 ) ; } else { return 0 ; } }
+tr	7	public double getUnnormalisedInterpolatedHeightAt ( Vec pp ) { return getInterpolatedHeightAt ( pp ) * range + min ; }
+tr	4	public Parler ( String message ) { this ( 0 , message ) ; }
+tr	5	public void setTopicsService ( TopicsService topicsService ) { this . topicsService = topicsService ; }
+tr	4	public Holder ( ) { System . out . println ( "Holder created" ) ; }
+tr	3	public String getFirstName ( ) { return firstName ; }
+tr	10	@ Override public Collection < Cursor < C >> getCursors ( ) { return Collections . unmodifiableCollection ( Arrays . asList ( _cursors ) ) ; }
+tr	8	private void effacer ( java . awt . event . ActionEvent evt ) { nomEtu . setText ( "" ) ; }
+tr	10	public void load ( Runnable runnable ) { while ( true ) { try { executor . execute ( runnable ) ; break ; } catch ( RejectedExecutionException e ) { Macro . sleep ( 500 ) ; } } }
+tr	9	public SimulatorView ( Simulator sim ) { super ( sim ) ; colors = new LinkedHashMap < class < ? > , Color > ( ) ; fieldView = new FieldView ( 100 , 100 ) ; }
+tr	4	public List < Calificacion > getCalificaciones ( ) { return calificaciones ; }
+tr	6	public OlogClientBuilder withExecutor ( ExecutorService executor ) { this . executor = executor ; return this ; }
+tr	2	public boolean isSituacao ( ) { return situacao ; }
+tr	6	public void addPOS ( POS pos ) { posArray . add ( pos ) ; }
+tr	8	public List < MessageVO > getMessageVOs ( ) { if ( messageVOs == null ) { messageVOs = new ArrayList < MessageVO > ( ) ; } return this . messageVOs ; }
+tr	1	public ShareItem ( ) { }
+tr	3	public String getFieldName ( ) { return _fieldName ; }
+tr	7	public InternManImpl ( UserStore userStore ) { this . users = new UserManagementImpl ( ) ; this . adverts = new AdvertManagementImpl ( ) ; }
+tr	1	public int [ ] getWarps ( ) { return new int [ ] { 0 , 0 , 0 , 0 } ; }
+va	5	public void setGame ( Game game ) { this . game = game ; }
+va	9	public Response delete ( String url , boolean authenticated ) throws WeiboException { return httpRequest ( url , null , authenticated , "DELETE" ) ; }
+va	8	public void serviceRemoved ( ServiceEvent event ) { synchronized ( infos ) { infos . remove ( event . getName ( ) ) ; } }
+va	3	public String getXlinkRole ( ) { return xlinkRole ; }
+va	4	public void setYear ( int year ) { this . year = year ; }
+va	1	public EvaluationUtilityTest ( ) { }
+va	6	public void paintComponent ( Graphics g2 ) { g2 . drawImage ( bgImage , 0 , 0 , null ) ; }
+va	7	@ Override public void deleteExam ( Exam exam ) { examDAO . delete ( exam ) ; }
+va	7	public InvalidParameterException ( final String message , final Throwable exception ) { super ( message , exception ) ; }
+va	6	public boolean get ( int value ) { assertValue ( value ) ; return ( bitset & 1 << value ) > 0 ; }
+va	9	public Object opt ( int index ) { return ( index < 0 || index >= length ( ) ) ? null : this . myArrayList . get ( index ) ; }
+va	8	public List < SchoolVO > getSchools ( ) { if ( schools == null ) { schools = new ArrayList < SchoolVO > ( ) ; } return this . schools ; }
+va	5	public GUIButton ( String name ) { super ( name ) ; setInput ( true ) ; }
+va	10	public void addSpecialEntity ( String identifier , String entity ) { specialEntities . put ( entity . toLowerCase ( ) , identifier ) ; }
+va	2	public boolean isInterested ( ) { return this . interested ; }
+va	10	public static double distance ( double x0 , double y0 , double x1 , double y1 ) { return distance ( x1 - x0 , y1 - y0 ) ; }
+va	3	@ Override protected void finalize ( ) { close ( ) ; }
+va	4	@ Override public void execute ( ) { light . on ( ) ; }
+va	1	public ProjectUser ( ) { }
+va	2	public char nextChar ( ) { return ( char ) ( next ( 16 ) ) ; }
+te	9	private String initBuildManager ( ) { BuildManager bm = new BuildManager ( "src/com/dysnomia/build.props" ) ; return String . valueOf ( bm . getBuild ( ) ) ; }
+te	7	public static void notNull ( Object object , RuntimeException throwIfAssertFail ) { if ( object == null ) { throw throwIfAssertFail ; } }
+te	5	@ Override protected void selectNumber ( ) { System . out . println ( "\u9009\u4E00\u4E2A\u4E2D\u56FD\u8054\u901A\u7535\u8BDD\u53F7" ) ; }
+te	8	public Henkilo valitaHenkiloOlio ( String nimi ) { return henkilo = henkilot . get ( nimi ) ; }
+te	3	@ Override public double getRotationDeg ( ) { return rotation ; }
+te	5	public void setProduto ( Produto produto ) { this . produto = produto ; }
+te	8	public boolean checkForFever ( final Person p , final Megameter m ) { return m . isBreathing ( p ) ; }
+te	2	public byte getNotSettable ( ) { return notSettable ; }
+te	7	public UserDaoImpl ( final java . sql . Connection userConn ) { this . userConn = userConn ; }
+te	3	public int getSize ( ) { return this . slots . length ; }
+te	9	public Game ( TurnManager tm ) { this . tm = tm ; seed = ( int ) ( Math . random ( ) * 100 ) ; init ( ) ; }
+te	1	private OrderManager ( ) { }
+te	1	public int getArgCount ( ) { return 2 ; }
+te	10	private void show ( String prefix , String text ) { System . out . println ( prefix + text ) ; }
+te	10	public MenuRetornarPartida ( ) { super ( "Menu Partida" , new ArrayList < ItemMenu > ( ) { private static final long serialVersionUID = - 2202065529317389240 ; { add ( new ItemMenu ( "REINICIAR" , "Retorna uma partida" ) ) ; add ( new ItemMenu ( "APAGAR" , "Apagar uma partida" ) ) ; add ( new ItemMenu ( "RETORNAR" , "Retornar ao menu principal" ) ) ; } } ) ; }
+te	6	private static String trad4 ( TreeNode tree ) { return tree . getStringValue ( ) ; }
+te	4	public void setRing ( boolean ring ) { this . ring = ring ; }
+te	2	public int getPeopleOnStation ( ) { return peopleOnStation ; }
+te	4	public int getLineNumber ( ) { return TokenStream . this . getLineNumber ( beg ) ; }
+te	6	public Creditos ( ) { JOptionPane . showMessageDialog ( null , message , "About..." , JOptionPane . INFORMATION_MESSAGE ) ; }

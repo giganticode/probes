@@ -4,7 +4,7 @@
 If you do not have anaconda installed, please check the installation instructions [here](https://docs.anaconda.com/anaconda/install/index.html). 
 
    ```
-      $ conda create --name probe_env python=3.6
+      $ conda create --name probe_env python=3.8
    ```   
     
 2. Next we will activate the virtual environment.

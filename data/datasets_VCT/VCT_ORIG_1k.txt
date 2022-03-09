@@ -1,0 +1,1000 @@
+tr	8	public ActionListener buildExitActionListener ( ) { return new ActionListener ( ) { public void actionPerformed ( ActionEvent e ) { System . exit ( 0 ) ; } } ; }
+tr	5	public void setId ( Integer id ) { this . id = id ; }
+tr	10	@ Test public void testPlayerLightGrenadeOnRightDown ( ) throws InvalidActionException { new MoveRightDown ( ) . doAction ( playerLightGrenade , gridLightGrenade ) ; assertEquals ( - 1 , playerLightGrenade . getRemainingTurns ( ) ) ; }
+tr	6	@ Override public void shareMemberData ( String key , Object object ) { }
+tr	6	@ Override public GameCharacterObject setVy ( float vy ) { this . vy = vy ; return this ; }
+tr	3	public int getRowCount ( ) { return data . length ; }
+tr	3	public String getXlinkRole ( ) { return xlinkRole ; }
+tr	3	public BigRational ( ) { this ( BigDecimal . ZERO ) ; }
+tr	7	public static SoundManager create ( class < ? > clazz ) throws IllegalArgumentException { return create ( clazz , new String ( ) ) ; }
+tr	6	public Labels getLabels ( ) { if ( labels == null ) { labels = new Labels ( ) ; } return labels ; }
+tr	7	public static void input ( float delta ) { if ( nextScene != null ) { updateLoadScene ( ) ; } rootNode . input ( delta ) ; }
+tr	4	public SocketNaoConectado ( String string ) { super ( string ) ; }
+tr	9	public AddOrigen ( java . awt . Frame parent , boolean modal ) { super ( parent , modal ) ; initComponents ( ) ; }
+tr	2	public int getBlackTime ( ) { return this . blackTime ; }
+tr	5	public void makeEven ( ) { if ( population . size ( ) % 2 == 1 ) { population . remove ( 0 ) ; } }
+tr	6	private static TermURIs getURISet ( ) { if ( _singleton == null ) { _singleton = new TermURIs ( ) ; } return _singleton ; }
+tr	4	public void setRunning ( boolean state ) { running = state ; }
+tr	3	public HTTPMessage getMessage ( ) { return msg ; }
+tr	8	public ZippedDocumentTemplate ( InputStream inputStream ) throws IOException { archive = OpenDocumentIO . readZip ( inputStream ) ; }
+tr	3	public IOutputtedNeuron [ ] getOutputNeurons ( ) { return this . outputNeurons ; }
+tr	4	public void setI ( float i ) { this . i = i ; }
+tr	9	@ Override public int getColumnAmount ( ) { if ( this . optionTextFields [ 1 ] . getText ( ) . equals ( "" ) ) return 0 ; return Integer . parseInt ( this . optionTextFields [ 1 ] . getText ( ) ) ; }
+tr	7	public IntersectionInfo ( HashMap < String , Integer [ ] > roadIntersections ) { this . roadIntersections = roadIntersections ; }
+tr	10	@ Test ( timeout = TIMEOUT ) public void test_size_after_adding_unique_nums ( ) { int [ ] testArray = { 0 , 1 , 2 , 3 , 4 } ; addAndTestSize ( "Added " + Arrays . toString ( testArray ) , testArray , 5 ) ; }
+tr	10	public final String readPropertyValue ( final String propertyName , final String defaultValue ) { return PROPERTIES . getProperty ( propertyName , defaultValue ) ; }
+tr	2	public void unsetName ( ) { this . name = null ; }
+tr	8	public lecMSMomentum ( ) { counting = 0 ; arrayIsFull = false ; mode = BUY_MODE ; average = 0 ; shareQuantity = 0 ; lastAverage = 0 ; }
+tr	5	public java . awt . Frame getFrame ( ) { return parent ; }
+tr	7	public void setInicio ( java . sql . Time inicio ) { this . inicio = inicio ; }
+tr	8	private static class < ? > getPrimitiveClass ( final class < ? > componentType ) { if ( Integer . class . isAssignableFrom ( componentType ) ) { return int . class ; } if ( double . class . isAssignableFrom ( componentType ) ) { return double . class ; } throw new UnsupportedOperationException ( "Mapping not implemented" ) ; }
+tr	1	public ContactUpdateFailed ( ) { super ( ) ; }
+tr	4	public void setDeliverTypeId ( long deliverTypeId ) { this . deliverTypeId = deliverTypeId ; }
+tr	5	public void run ( ) { txtComponent . select ( pos , pos2 ) ; }
+tr	2	public final int getSolutionMemoryMegabytes ( ) { return this . solutionMemoryMegabytes ; }
+tr	1	public HostList ( ) { super ( ) ; }
+tr	8	@ Override public boolean isProcessing ( String clientId ) { return players . get ( clientId ) . animating ; }
+tr	3	public JPasswordField getPassword ( ) { return password ; }
+tr	9	public Game ( TurnManager tm ) { this . tm = tm ; seed = ( int ) ( Math . random ( ) * 100 ) ; init ( ) ; }
+tr	10	public static < T > Iterable < Pair < T >> getCombinationsNonReflexive ( Iterable < T > objects ) { return getCombinations ( objects , false ) ; }
+tr	10	public String resultingJson ( JSONArray input ) { String jSONArray = input . toString ( ) ; return resultingJson ( jSONArray ) ; }
+tr	3	public CheckBox getOnsaleCheckbox ( ) { return onsaleCheckbox ; }
+tr	1	public void construct ( ) { return ; }
+tr	7	public void onUnitDestroy ( Unit unit ) { if ( eventListener != null ) { eventListener . onUnitDestroy ( unit ) ; } }
+tr	4	public Parler ( String message ) { this ( 0 , message ) ; }
+tr	5	@ Override public List < POS [ ] > getPOSPairs ( ) { return posPairs ; }
+tr	8	public SoundDemo ( ) { initCanvas ( "Sound Demo" , 800 , 600 ) ; assetLoader = new AssetLoader ( this ) ; gongClip = assetLoader . loadSound ( "Sounds/gong.wav" ) ; setVisible ( true ) ; }
+tr	7	public Object accept ( ASTVisitor visitor ) throws DatabaseException { return visitor . visit ( this ) ; }
+tr	9	private void checkLevel ( ) { if ( Console . getDebugMode ( ) ) setLevel ( Level . ALL ) ; else setLevel ( Level . INFO ) ; }
+tr	1	public boolean reversible ( ) { return true ; }
+tr	4	protected LevelCreator ( ) { level = new Level ( ) ; loaded = false ; }
+tr	4	public Layer ( float zPosition ) { this . zPosition = zPosition ; }
+tr	9	@ Override public String toString ( ) { return "Token(" + id + "(" + id . id ( ) + ")" + " " + text + " " + line + " " + column + ")" ; }
+tr	3	public JTextField getTextNombre ( ) { return TextNombre ; }
+tr	4	BeforePollingCycleEvent ( DirectoryPoller dp ) { super ( dp ) ; }
+tr	10	public int getKills ( String progress ) { if ( ! isValid ( progress ) ) throw new IllegalArgumentException ( "progress is not valid" ) ; return Integer . parseInt ( progress . split ( " " ) [ 0 ] ) ; }
+tr	4	public String getInputEncoding ( ) { return pp . getInputEncoding ( ) ; }
+tr	7	public InternManImpl ( UserStore userStore ) { this . users = new UserManagementImpl ( ) ; this . adverts = new AdvertManagementImpl ( ) ; }
+tr	6	public Rect div ( double factor ) { return copy ( ) . div_ip ( factor ) ; }
+tr	4	protected void setIndex ( int index ) { this . index = index ; }
+tr	5	public Iterator < ChannelUser > iterChannelUsers ( ) { return users . iterator ( ) ; }
+tr	5	@ Override public void releaseSavepoint ( Savepoint savepoint ) throws SQLException { }
+tr	7	@ Override public void deleteExam ( Exam exam ) { examDAO . delete ( exam ) ; }
+tr	9	protected ASTNode maybeWrapInTerm ( ASTNode node ) { if ( node . getNodeCount ( ) == 1 ) { return node ; } return new TermNode ( node ) ; }
+tr	3	public void delete ( ) { Dispatch . call ( this , "Delete" ) ; }
+tr	7	public Iterator < TextBlob > iterator ( int ii ) { return blobs . listIterator ( ii ) ; }
+tr	4	public void setYear ( int year ) { this . year = year ; }
+tr	4	public static void main ( String [ ] args ) { print ( 4 ) ; }
+tr	5	@ Override protected void selectNumber ( ) { System . out . println ( "\u9009\u4E00\u4E2A\u4E2D\u56FD\u8054\u901A\u7535\u8BDD\u53F7" ) ; }
+tr	5	@ Override public synchronized void removeNotify ( ) { this . applet . shutdown ( ) ; super . removeNotify ( ) ; }
+tr	8	@ Override protected final V convert ( String argument ) { return convertWith ( converter , argument ) ; }
+tr	1	public boolean acceptsArguments ( ) { return true ; }
+tr	4	@ Override public HandlerList getHandlers ( ) { return handlers ; }
+tr	8	public void setHumidityOffset ( float humidityOffset ) { this . humidityOffset = new float ( humidityOffset ) ; humidityOffsetField . setText ( this . humidityOffset . toString ( ) ) ; }
+tr	10	@ Override public Collection < Cursor < C >> getCursors ( ) { return Collections . unmodifiableCollection ( Arrays . asList ( _cursors ) ) ; }
+tr	10	public IntegerSetting ( final String name_ , final String title , final Integer initValue ) { this ( name_ , title , initValue , null , null ) ; }
+tr	9	public void procFile ( String filepath , String restart ) { this . lastItem = restart ; copyTable ( filepath ) ; }
+tr	4	@ Override public void execute ( ) { light . on ( ) ; }
+tr	9	Context ( String originalText , Position position ) { this . originalText = originalText ; this . position = position ; }
+tr	5	public void setUserPhoto ( String userPhoto ) { this . userPhoto = userPhoto ; }
+tr	3	@ Override protected void finalize ( ) { close ( ) ; }
+tr	7	public static void notNull ( Object object , RuntimeException throwIfAssertFail ) { if ( object == null ) { throw throwIfAssertFail ; } }
+tr	2	public int getVersion ( ) { return version ; }
+tr	1	public NoeudPCC ( ) { }
+tr	7	public static byte [ ] getValues ( ) { byte [ ] values = { ENCODED_VOICE , RAW_BINARY_DATA , APPLICATION_SPECIFIC_DATA , DATABASE_INDEX } ; return values ; }
+tr	3	@ AfterClass public static void tearDownClass ( ) throws Exception { }
+tr	6	public static void setNombre ( String mNombre ) { Conexion . mNombre = mNombre ; }
+tr	2	private void finaliza ( ) { this . dispose ( ) ; }
+tr	6	private void exiting ( ) { if ( connectionHandler != null && connectionHandler . isConnected ( ) ) connectionHandler . disconnect ( ) ; }
+tr	1	public ClientImp ( ) { }
+tr	6	public scanner ( ) throws java . io . IOException { this ( System . in ) ; }
+tr	6	public void addValue ( Object value ) { values_ . add ( value ) ; }
+tr	7	public JSONException ( Throwable cause ) { super ( cause . getMessage ( ) ) ; this . cause = cause ; }
+tr	8	public static int randInt ( int min , int max ) { return ( rand . nextInt ( ( max - min ) + 1 ) + min ) ; }
+tr	2	public int getSize ( ) { return size ; }
+tr	2	public int getDdd ( ) { return ddd ; }
+tr	4	public void setId ( long value ) { this . id = value ; }
+tr	3	public Object getTree ( ) { return tree ; }
+tr	3	public String getRowId ( ) { return rowId ; }
+tr	4	public void setMinMwt ( float value ) { this . minMwt = value ; }
+tr	1	public NuevoFarmaceutico ( ) { super ( ) ; }
+tr	2	public int intensity_stereo_bound ( ) { return h_intensity_stereo_bound ; }
+tr	7	public void setCurrency ( java . lang . String currency ) { this . currency = currency ; }
+tr	2	private void doActionExit ( ) { saveChanges ( ) ; }
+tr	6	public Creditos ( ) { JOptionPane . showMessageDialog ( null , message , "About..." , JOptionPane . INFORMATION_MESSAGE ) ; }
+tr	1	public static boolean isSigned_interval ( ) { return false ; }
+tr	8	private void printMessage ( String messageOut ) { if ( debug ) { System . out . print ( messageOut ) ; } }
+tr	2	protected void start ( ) { start ( null ) ; }
+tr	1	public QuestionPhoto ( ) { super ( ) ; }
+tr	5	public HexValidator ( ) { pattern = Pattern . compile ( HEX_PATTERN ) ; }
+tr	2	public boolean hasToChargeMove ( ) { return chargingMoveCount > 0 ; }
+tr	10	public void load ( Runnable runnable ) { while ( true ) { try { executor . execute ( runnable ) ; break ; } catch ( RejectedExecutionException e ) { Macro . sleep ( 500 ) ; } } }
+tr	4	@ Before public void setUp ( ) { undertest = new MedianStore ( ) ; }
+tr	2	@ Override public boolean isList ( ) { return false ; }
+tr	7	public InvalidParameterException ( final String message , final Throwable exception ) { super ( message , exception ) ; }
+tr	10	@ Override public int compareTo ( PathNode o ) { if ( cost < o . cost ) return - 1 ; if ( cost > o . cost ) return 1 ; return 0 ; }
+tr	8	private void addScrollPane ( ) { scrollPane = new JScrollPane ( tablePanel , JScrollPane . VERTICAL_SCROLLBAR_ALWAYS , JScrollPane . HORIZONTAL_SCROLLBAR_NEVER ) ; }
+tr	8	public static void sortTopicsList ( ArrayList < TopicOutput > list ) { Collections . sort ( list , new MyComparator ( ) ) ; }
+tr	7	private char peekNextChar ( ) { if ( pos < ( input . length ( ) - 1 ) ) { return input . charAt ( pos + 1 ) ; } else { return 0 ; } }
+tr	8	public static String [ ] getMonths ( final boolean shortened ) { if ( shortened ) { return DATE_FORMAT_SYMBOLS . getShortMonths ( ) ; } else { return DATE_FORMAT_SYMBOLS . getMonths ( ) ; } }
+tr	9	public Object opt ( int index ) { return ( index < 0 || index >= length ( ) ) ? null : this . myArrayList . get ( index ) ; }
+tr	10	public void set ( int index , Object element ) throws illegalIndexException { if ( index < 0 ) { throw new illegalIndexException ( ) ; } tablica_stosu [ index ] = element ; }
+tr	5	public void setPhoneNum ( PhoneNumber phoneNum ) { this . phoneNum = phoneNum ; }
+tr	2	public boolean isSchoolAnnouncements ( ) { return schoolAnnouncements ; }
+tr	10	@ Override public void run ( ) { setSpriteX ( 1 ) ; try { Thread . sleep ( 50 ) ; } catch ( InterruptedException e ) { e . printStackTrace ( ) ; } setSpriteX ( 0 ) ; }
+tr	10	public boolean equals ( Object o ) { if ( o == null ) return false ; if ( o == this ) return true ; if ( o instanceof ASPath ) return this . equals ( ( ASPath ) o ) ; return false ; }
+tr	8	public Integer executeHql ( String hql ) { return this . getCurrentSession ( ) . createQuery ( hql ) . executeUpdate ( ) ; }
+tr	5	public void setProdCodeGrp ( ProdCodeGrp value ) { this . prodCodeGrp = value ; }
+tr	2	public int toInt ( ) { return mInt ; }
+tr	5	public GUIButton ( String name ) { super ( name ) ; setInput ( true ) ; }
+tr	4	public void setCurrentIndex ( int currentIndex ) { this . currentIndex = currentIndex ; }
+tr	8	@ Override public void write ( String message ) { write ( message , false , OutputType . NORMAL ) ; }
+tr	9	public EventUndoListener ( Console console , Entry entry ) { this . console = console ; this . entry = entry ; }
+tr	10	public Modele ( ) { this . joueurs = new ArrayList < Joueur > ( ) ; this . type = TypePartie . CLASSIQUE ; this . options = new Options ( ) ; this . indice_joueur_courant = 0 ; }
+tr	7	public static String Message_GetUsageCredits ( String THE_MESSAGE ) { return otapiJNI . OTAPI_Basic_Message_GetUsageCredits ( THE_MESSAGE ) ; }
+tr	9	public boolean isSet ( _Fields field ) { if ( field == null ) { throw new IllegalArgumentException ( ) ; } switch ( field ) { case GET_LANG : return isSetGetLang ( ) ; } throw new IllegalStateException ( ) ; }
+tr	5	public Graph ( ) { this . keyToNode = new HashMap < > ( ) ; this . nodes = new HashSet < > ( ) ; }
+tr	4	public void setDescompte ( float descompte ) { this . descompte = descompte ; }
+tr	2	public Tela_Usuario_Cadastro ( ) { initComponents ( ) ; }
+tr	3	public void windowDeiconified ( WindowEvent e ) { }
+tr	5	public void setPassword ( String password ) { this . password = password ; }
+tr	6	@ Column ( name = "PRP_MOA_TIPO" ) @ Id public String getPrpMoaTipo ( ) { return prpMoaTipo ; }
+tr	5	Partido ( Manager [ ] managers ) { this . managers = managers ; }
+tr	2	public int getComparisonCount ( ) { return comparisonCount ; }
+tr	4	@ Override public String getVarName ( ) { return this . name ; }
+tr	7	protected RejectPageBuilder reject ( String viewName ) { return WebPageUtils . reject ( viewName ) ; }
+tr	1	public Table ( ) { }
+tr	3	public static void sort ( Comparable [ ] array ) { }
+tr	3	public StudentInfo getStdInfo ( ) { return stdInfo ; }
+tr	9	public void closeWriter ( ) { try { this . writer . flush ( ) ; this . writer . close ( ) ; } catch ( IOException e ) { e . printStackTrace ( ) ; } }
+tr	1	public Patient ( ) { super ( "" , "" , "" ) ; }
+tr	6	public boolean containsFamily ( String family ) { return families . contains ( family ) ; }
+tr	3	public Cliente ( ) { mascotas = new ArrayList ( ) ; }
+tr	4	@ Override public String getName ( ) { return name ; }
+tr	7	public OAuth2 ( AuthorizationCallback authCallback , OAuth2Settings settings ) { this ( authCallback , settings , null ) ; }
+tr	2	public BaseInformation ( ) { this . ecrireInformations ( ) ; }
+tr	4	public byte getRegisteredDelivery ( ) { return byte . parseByte ( "0" + registeredDelivery . getText ( ) , 10 ) ; }
+tr	1	public int [ ] getWarps ( ) { return new int [ ] { 0 , 0 , 0 , 0 } ; }
+tr	7	public boolean RemoveContact ( long nIndexContact ) { return otapiJNI . AddressBook_RemoveContact ( swigCPtr , this , removeRefContact ( nIndexContact ) ) ; }
+tr	10	@ CRRCSimEditorNode ( name = "DataIdle" ) @ XmlElement ( name = "data" ) @ XmlElementWrapper ( name = "data_idle" ) public ArrayList < EngineDataIdle > getDataIdle ( ) { return dataIdle ; }
+tr	10	public List < Trends > getTrendsDaily ( ) throws WeiboException { return Trends . constructTrendsList ( client . get ( WeiboConfig . getValue ( "baseURL" ) + "trends/daily.json" ) ) ; }
+tr	5	public void setBankSwiftNo ( String bankSwiftNo ) { this . bankSwiftNo = bankSwiftNo ; }
+tr	2	public int amount ( ) { return this . amount ; }
+tr	6	synchronized public String getString ( ) { try { wait ( ) ; } catch ( InterruptedException e ) { } return napis ; }
+tr	2	public void testApp ( ) { assertTrue ( true ) ; }
+tr	8	private void effacer ( java . awt . event . ActionEvent evt ) { nomEtu . setText ( "" ) ; }
+tr	7	public boolean offerFirst ( E e ) { if ( contains ( e ) ) { return false ; } linkFirst ( e ) ; return true ; }
+tr	7	public SecurityServiceException ( String code , String message ) { this ( code , message , null ) ; }
+tr	5	MARKET ( String ... urlStrings ) { this . urlStrings = urlStrings ; }
+tr	8	public boolean checkForFever ( final Person p , final Megameter m ) { return m . isBreathing ( p ) ; }
+tr	1	public GridStatistics ( ) { super ( ) ; }
+tr	4	public List < Calificacion > getCalificaciones ( ) { return calificaciones ; }
+tr	5	@ Override public Line getFirstLine ( ) { return this . getTitle ( ) . getLine ( ) ; }
+tr	4	public void setNeedsPass ( boolean needsPass ) { this . needsPass = needsPass ; }
+tr	8	public static long sum ( long ... values ) { long sum = 0 ; for ( long l : values ) { sum += l ; } return sum ; }
+tr	3	public void clear ( ) { listModel . clear ( ) ; }
+tr	6	public IntAdder ( JBlockingQueue < Integer > q ) { this . q = q ; }
+tr	3	public boolean jogador1EhVencedor ( ) { return jogador1 . ehVencedor ( ) ; }
+tr	7	@ Override public E actual ( ) { if ( actual == null ) { throw new NullPointerException ( "Error: no se puede acceder el dato actual!" ) ; } return actual . getDato ( ) ; }
+tr	7	public StringValue ( final String value ) { this ( value . getBytes ( Bencode . UTF8 ) ) ; }
+tr	4	public void isiOperan2 ( double x ) { op2 = x ; }
+tr	4	public List < Campaign > getCamlist ( ) { return camlist ; }
+tr	5	public void setProduto ( Produto produto ) { this . produto = produto ; }
+tr	8	public String informaNomeJogador ( int posicao ) { if ( posicao == 1 ) { return jogador1 . obterNome ( ) ; } else { return jogador2 . obterNome ( ) ; } }
+tr	2	public void showMinorCard ( ) { showCard ( 1 ) ; }
+tr	1	public Node ( ) { }
+tr	9	public Attribute ( String key , String value ) { super ( ) ; this . key = key ; this . value = value ; }
+tr	10	public List < String > complete ( String string , int position ) { return CompletionUtil . completeStrings ( strings , string ) ; }
+tr	4	@ Override public IGameController getController ( ) { return controller ; }
+tr	4	public Holder ( ) { System . out . println ( "Holder created" ) ; }
+tr	9	@ Override public void enterRule ( ParseTreeListener listener ) { if ( listener instanceof EnquantoListener ) ( ( EnquantoListener ) listener ) . enterEscreva ( this ) ; }
+tr	1	public boolean blocksLineOfSight ( ) { return false ; }
+tr	8	public BaseLight ( Vector3f color , float intensity ) { this . color = color ; this . intensity = intensity ; }
+tr	8	public void saveLang ( ) { try { lang . save ( langFile ) ; } catch ( IOException e ) { e . printStackTrace ( ) ; } }
+tr	7	public NoSuchColumnException ( String message , Throwable cause ) { super ( message , cause ) ; }
+tr	1	private ButtCity ( ) { }
+tr	1	public ClearQuizServlet ( ) { super ( ) ; }
+tr	1	public Alphabet ( ) { this ( 10000 ) ; }
+tr	3	@ BeforeMethod public void setUpMethod ( ) throws Exception { }
+tr	6	private PlayerPanel buildSecondPlayerPanel ( ) { return new ComputerPlayerPanel ( controller , PlayerSide . RIGHT ) ; }
+tr	1	public ProjectUser ( ) { }
+tr	8	@ Override public void onFXThreadSuccess ( Backup backup ) { mBackup = backup ; mStage . close ( ) ; }
+tr	6	@ JsonAnyGetter public Map < String , Object > getAdditionalProperties ( ) { return this . additionalProperties ; }
+tr	8	@ Override public String getFileName ( String abspath ) { return new File ( abspath ) . getName ( ) ; }
+tr	10	public Decision takeDecision ( PersonalEnvironment personalEnviroment , Habitat settlement ) { return getStrategy ( ) . takeDecision ( this , personalEnviroment , settlement ) ; }
+tr	8	public static URL getURL ( String filName ) { return staticSound . getClass ( ) . getResource ( filName ) ; }
+tr	8	public int getComponetType ( boolean disregardScrollPane ) { if ( compType == TYPE_UNSET ) compType = checkType ( disregardScrollPane ) ; return compType ; }
+tr	2	public double getFear ( ) { return fear ; }
+tr	4	@ Override public float getX ( ) { return this . pos . x ; }
+tr	8	public void setDocumentTable ( Hashtable < String , ArrayList < String >> documentTable ) { this . documentTable = documentTable ; }
+tr	2	public void showAddAnimalDialog ( ) { setup ( ) ; }
+tr	8	public AcademyFacadeDB ( ) { emf = Persistence . createEntityManagerFactory ( "ServerSidePU" ) ; em = emf . createEntityManager ( ) ; addToDatabase ( ) ; }
+tr	6	private boolean isPreconditionsFilled ( Path absFilePath ) { if ( ! canWriteSelectedFile ( absFilePath ) ) { return false ; } if ( ! canWriteWithDefaultOriginalClassConstructor ( ) ) { return false ; } return true ; }
+tr	5	public void setVersionName ( String value ) { this . versionName = value ; }
+tr	5	private void clearAddTaxPanel ( ) { addTaxNameField . setText ( "" ) ; addTaxRateField . setText ( "" ) ; }
+tr	4	public void setNbRows ( int nb ) { rows = nb ; }
+tr	1	public SingleEvent ( ) { }
+tr	5	public void setTopicsService ( TopicsService topicsService ) { this . topicsService = topicsService ; }
+tr	3	public String getCourseNumber ( ) { return courseNumber ; }
+tr	1	public SongDAO ( ) { }
+tr	3	public String getFieldName ( ) { return _fieldName ; }
+tr	7	public UnidadHerida ( Integer saludMaxima ) { this . establecerSaludMaxima ( saludMaxima ) ; this . recibirGolpe ( saludMaxima / 2 ) ; }
+tr	6	public final boolean isRegistered ( BytesKey key ) { return map . containsKey ( key ) ; }
+tr	4	public void setMaxDesolvApolar ( float value ) { this . maxDesolvApolar = value ; }
+tr	7	public InviteDaoException ( String message , Throwable cause ) { super ( message , cause ) ; }
+tr	1	protected RandomPlayer ( ) { }
+tr	6	@ Override public double calculateDiscount ( double price , int qty ) { return ( qty * dollarAmt ) ; }
+tr	9	public static mVar m$piece ( mVar p$3 , Object object , Object object2 ) { throw new UnsupportedOperationException ( ) ; }
+tr	7	private void jButton1ActionPerformed ( java . awt . event . ActionEvent evt ) { this . dispose ( ) ; }
+tr	4	public void setY ( float y ) { this . y = y ; }
+tr	7	@ Override public Shape getShape ( int shapeIndex ) { return myShapePalette . getShape ( shapeIndex ) ; }
+tr	1	public ResendPassword ( ) { super ( ) ; }
+tr	8	@ Override public Object get ( Object key ) { return super . get ( toLowerCase ( key ) ) ; }
+tr	10	public void addSpecialEntity ( String identifier , String entity ) { specialEntities . put ( entity . toLowerCase ( ) , identifier ) ; }
+tr	3	public String getProvincia ( ) { return provincia ; }
+tr	6	public static ServiceFactory getInstance ( ) { if ( instance == null ) instance = new ServiceFactory ( ) ; return instance ; }
+tr	3	public String getSendTime ( ) { return sendTime ; }
+tr	8	public void setOutGoingConnections ( Map < Neuron , List < Connection >> outGoingConnections ) { this . outGoingConnections = outGoingConnections ; }
+tr	10	public LoginUserModel LoginUserInfo ( String userloginName ) { LoginUserModel loginUserModel = loginUserDao . FindloginUser ( userloginName ) ; return loginUserModel ; }
+tr	5	private int valueRanges ( Situation s ) { return valueSolution ( s , 0 ) ; }
+tr	3	public Player [ ] getPlayers ( ) { return this . players ; }
+tr	7	public void setDescription ( String value ) { this . description = value ; this . isDescriptionDirty = true ; setDirty ( ) ; }
+tr	8	public static Direction getDirection ( String direction ) { return Direction . valueOf ( direction . toUpperCase ( ) ) ; }
+tr	7	public static String readLine ( String prompt ) { printPrompt ( prompt ) ; return readLine ( ) ; }
+tr	3	public Arctg ( double acc ) { super ( acc ) ; }
+tr	7	@ Override protected Connection getConnection ( ) throws SQLException { return DataSourceUtils . getConnection ( dataSource ) ; }
+tr	1	protected void end ( ) { }
+tr	8	public ParticipantTableModel ( ArrayList < Participant > participantList ) { this . participantList = participantList ; lastRow = new SingleParticipant ( ) ; }
+tr	2	public int getEvaluationDetail ( ) { return evaluationDetail ; }
+tr	3	public TitleImp ( ) { this . line = new LineImp ( this ) ; }
+tr	6	@ Override public boolean setPacketFields ( Map < String , Object > in ) { return true ; }
+tr	6	static public IconCache zam56 ( HttpCache hc ) { return new IconCache ( hc , 56 , 1 , "http://wow.zamimg.com/images/wow/icons/large/$.jpg|dir=56" ) ; }
+tr	3	public Integer getNum ( ) { return num ; }
+tr	1	public ReadNode ( ) { this ( null ) ; }
+tr	6	public int getHeight ( int layer ) { return layers . get ( layer ) . getHeight ( ) ; }
+tr	4	@ Override public FullVersion getVersion ( ) { return version ; }
+tr	6	public void setProfileTbls ( Set < ProfileTbl > profileTbls ) { this . profileTbls = profileTbls ; }
+tr	8	public CellEvent ( View v , EventObject aEv ) { super ( v ) ; this . action = aEv ; }
+tr	7	public boolean isNull ( String key ) { return JSONObject . null . equals ( this . opt ( key ) ) ; }
+tr	6	private void txtSalesp1ActionPerformed ( java . awt . event . ActionEvent evt ) { }
+tr	2	public boolean isBlsSpecialBonusAvailable ( ) { return blsSpecialBonusAvailable ; }
+tr	3	public int getSize ( ) { return this . slots . length ; }
+tr	8	public void setIdIsSet ( boolean value ) { __isset_bitfield = EncodingUtils . setBit ( __isset_bitfield , __ID_ISSET_ID , value ) ; }
+tr	6	public static String truncateText ( String text ) { return truncateText ( text , 60 ) ; }
+tr	1	public boolean checkSwamp ( ) { return false ; }
+tr	6	public void showMessageBox ( String sender , String message , boolean option ) { }
+tr	9	@ Override public void enterRule ( ParseTreeListener listener ) { if ( listener instanceof EnquantoListener ) ( ( EnquantoListener ) listener ) . enterPrograma ( this ) ; }
+tr	10	public Sonido getNewSonido ( int nombreSonido ) { return nombreSonido < sonidos . size ( ) ? sonidos . get ( nombreSonido ) . clonar ( ) : null ; }
+tr	3	public static void showNewTimeWindow ( ) { timeBo . showNewTime ( ) ; }
+tr	2	public void resetTime ( ) { totalInNano = 0 ; }
+tr	9	public boolean isAlive ( ) { if ( ! isAlive ) { if ( location != null ) { field . clear ( location ) ; location = null ; field = null ; } } return isAlive ; }
+tr	10	public void mouseReleased ( MouseEvent e ) { GameAction gameAction = getMouseButtonAction ( e ) ; if ( gameAction != null ) { gameAction . release ( ) ; } }
+tr	3	public Integer getAudienceId ( ) { return audienceId ; }
+tr	8	@ Test public void shouldChoosePresentTwoObtain200InPoints ( ) { player . chooseGift ( 2 ) ; assertThat ( player . getPoints ( ) , is ( 200 ) ) ; }
+tr	1	public void execute ( ) { }
+tr	9	public List < AuthorModel > getAuthorsByName ( String name ) throws WebshopAppException { return authorRepository . getAuthorsByName ( name ) ; }
+tr	2	public long getTimeToWait ( ) { return this . timeToWait ; }
+tr	4	public Matrix m ( ) { return core . m ( ) ; }
+tr	6	@ Override public void mouseMoved ( MouseEvent e ) { updateWidgets ( e ) ; }
+tr	8	public List < SchoolVO > getSchools ( ) { if ( schools == null ) { schools = new ArrayList < SchoolVO > ( ) ; } return this . schools ; }
+tr	5	public void setArmour ( String armour ) { this . armour = armour ; }
+tr	2	public int getWidth ( ) { return width ; }
+tr	9	private IdentNode constIdent ( ) { IdentNode fu = new IdentNode ( read ( ID , "identifier" ) . text ( ) + "" ) ; return fu ; }
+tr	10	@ Test public void testByZero ( ) { try { DivisionResult dr = Util . divideByApproximatelyEqualParts ( 2 , 0 ) ; fail ( "ae expected  but obtained " + dr ) ; } catch ( ArithmeticException ae ) { } }
+tr	6	public void settable_employeeListener ( MouseListener l ) { this . table_employee . addMouseListener ( l ) ; }
+tr	7	private int getNextIndicator ( ) throws IOException { if ( this . indicator == 0 ) { this . indicator = in . read ( ) ; } return this . indicator ; }
+tr	7	@ Override public void setMessage ( final Object message ) { this . setText ( message . toString ( ) ) ; }
+tr	4	public TableColumnAdjuster ( JTable table ) { this ( table , 6 ) ; }
+tr	10	@ Test public void revers_on_empty_list_should_be_equals_to_itself ( ) { DoubleLinkedList list = new DoubleLinkedList ( ) ; assertEquals ( utils . reverse ( list ) , list ) ; }
+tr	5	public void setType ( String type ) { this . type = type ; }
+tr	8	Type getType ( ) { return type == Type . kAny ? Type . kBase : type ; }
+tr	8	public void setCode ( CodeFragment code ) { if ( code == null ) code = new CodeFragment ( ) ; this . code = code ; }
+tr	3	public synchronized long getHMillis ( ) { return ( long ) ( p . H * 1000.0 ) ; }
+tr	2	@ Override public boolean esProducto ( ) { return false ; }
+tr	5	@ Override public void close ( ) throws IOException { in . close ( ) ; }
+tr	1	public PlacementListToken ( ) { }
+tr	9	public void addDocument ( int docid , String grade ) { relevances . put ( docid , convertToBinaryRelevance ( grade ) ) ; }
+tr	1	public BuilderException ( ) { super ( ) ; }
+tr	1	public SimpleResponseBody ( ) { }
+tr	10	public double getAsDouble ( String key , double defaultValue ) { double value = getAsDouble ( key ) ; return value == null ? defaultValue : value ; }
+tr	9	@ Override public void enterRule ( ParseTreeListener listener ) { if ( listener instanceof DecafParserListener ) ( ( DecafParserListener ) listener ) . enterId1 ( this ) ; }
+tr	2	@ AfterClass public static void tearDownClass ( ) { }
+tr	1	public void run ( ) { }
+tr	9	private final void processItems ( final List < Step > items ) { for ( final Step item : items ) { item . process ( ) ; } }
+tr	5	public void setAddress ( Address address ) { this . address = address ; }
+tr	8	public void serviceRemoved ( ServiceEvent event ) { synchronized ( infos ) { infos . remove ( event . getName ( ) ) ; } }
+tr	7	@ Override public String toString ( ) { return String . format ( "(%d %d)" , getX ( ) , getY ( ) ) ; }
+tr	7	public PLDictionary ( HashMap < String , PLObject > value ) { _value = value ; }
+tr	2	public boolean isInterested ( ) { return this . interested ; }
+tr	4	@ Override public String toString ( ) { return "Autonomous Points : " + getPoints ( ) ; }
+tr	4	public void setAddressId ( int value ) { addressId = value ; }
+tr	4	public void setE ( float e ) { this . e = e ; }
+tr	10	public int length ( ) { LinkedListNode iter = this ; int acc = 0 ; while ( iter != null ) { acc ++ ; iter = iter . next ; } return acc ; }
+tr	8	public int getMaxQuantity ( int quantity ) { if ( currentQuantity + quantity > maxQuantity ) { throw new StoreProblemException ( ) ; } return currentQuantity + quantity ; }
+tr	7	public UserDaoImpl ( final java . sql . Connection userConn ) { this . userConn = userConn ; }
+tr	2	public int getHpBase ( ) { return hpBase ; }
+tr	1	public SuggestionText ( ) { }
+tr	8	public Henkilo valitaHenkiloOlio ( String nimi ) { return henkilo = henkilot . get ( nimi ) ; }
+tr	10	private void setupServerEnvironment ( ) { if ( ssl ) HTTPSSession . register ( TransportRegistry . getTransportRegistryInstance ( ) ) ; else HTTPSessionApache . register ( TransportRegistry . getTransportRegistryInstance ( ) ) ; }
+tr	5	protected void checkKey ( K k ) { if ( k == null ) { throw new InvalidKeyException ( "Invalid key: null." ) ; } }
+tr	10	public CharacterDimensions ( int width , int height , int lineSpacing ) { m_width = width ; m_height = height ; m_lineSpacing = lineSpacing ; }
+tr	5	public void setCodTipoPagamento ( Integer codTipoPagamento ) { this . codTipoPagamento = codTipoPagamento ; }
+tr	10	@ ManyToOne ( fetch = FetchType . LAZY ) @ JoinColumn ( name = "mg_id" , nullable = false ) public MappingGroup getMappingGroup ( ) { return this . mappingGroup ; }
+tr	5	public void validate ( ) throws org . apache . thrift7 . TException { }
+tr	8	@ Override public void setText ( String Text ) { this . SetText ( Text , Color . white ) ; }
+tr	9	public void set_wheelchair_boarding ( String in ) { try { _wheelchair_boarding = Integer . parseInt ( in ) ; } catch ( NumberFormatException e ) { ; } }
+tr	9	public double timesRestart ( Character c ) { if ( restart . containsKey ( c ) ) { return restart . getValue ( c ) ; } else { return 0 ; } }
+tr	4	public void setAgility ( int agi ) { this . agility = agi ; }
+tr	3	public String getDescription ( ) { return description ; }
+tr	2	public int getEmpNo ( ) { return empNo ; }
+tr	4	public void setFinalGrades ( boolean value ) { this . finalGrades = value ; }
+tr	5	public void setPrpMoaTipo ( String prpMoaTipo ) { this . prpMoaTipo = prpMoaTipo ; }
+tr	10	public TileMap ( int width , int height ) { layers = new ArrayList < TileLayer > ( ) ; this . width = width ; this . height = height ; }
+tr	3	public String getDate ( ) { return date ; }
+tr	10	public void add ( Location loc , T occupant ) { getGrid ( ) . put ( loc , occupant ) ; repaint ( ) ; }
+tr	10	public static double distance ( double x0 , double y0 , double x1 , double y1 ) { return distance ( x1 - x0 , y1 - y0 ) ; }
+tr	7	public void updatePositionWithStep ( int step ) { position = PositionUpdate . getCurrentPositionWithDistance ( position , step ) ; }
+tr	5	@ Before public void setUp ( ) { DB . setDataSource ( new SQLite ( ) ) ; }
+tr	9	public Set < String > keySet ( ) { if ( mode == Mode . Map ) { return map . keySet ( ) ; } throw new PerlHashTypeException ( "Not a map" ) ; }
+tr	2	public int getPeopleOnStation ( ) { return peopleOnStation ; }
+tr	9	public void start ( ) { this . setPlayingOrder ( player1 , player2 ) ; this . board . clearTheBoard ( ) ; this . setStatus ( Game . NEW_GAME ) ; }
+tr	1	public OperacaoLog ( ) { }
+tr	9	@ Test public void ICE_attacking_NO_TYPE ( ) { assertEquals ( 1.0 , tc . getWeaknessResistance ( Type . ICE , Type . NO_TYPE ) , 0.0 ) ; }
+tr	10	private void loadKeyActions ( ) { replPanel . addKeyAction ( "F1" , new HelpAction ( ) ) ; replPanel . addKeyAction ( "ctrl S" , new SaveAction ( ) ) ; replPanel . addKeyAction ( "ctrl O" , new LoadAction ( ) ) ; }
+tr	10	@ Test public void testExceptionMessageOnTransformWith1Param_CaseKo4 ( ) throws IOException , TemplateException , NoSuchMethodException , SecurityException , IllegalAccessException , IllegalArgumentException , InvocationTargetException { assertParseThrowsException ( "~$text:'charat<>~" , "Empty init list parameter before '>' at position '-:l1:c16'." ) ; }
+tr	8	public static double interpolate ( double last , double now , double dtime ) { return last + ( now - last ) * dtime ; }
+tr	1	public int process_id ( ) { return 2 ; }
+tr	7	public void setClose ( java . math . BigDecimal close ) { this . close = close ; }
+tr	6	public String getMessage ( ) { return super . getMessage ( ) + SEPARATOR + getErrnoString ( ) + " [" + errno + "] " ; }
+tr	9	@ Override public void sendPacket ( DatagramPacket pkt ) throws IOException { synchronized ( sendLock ) { getDgSocket ( ) . send ( pkt ) ; } }
+tr	6	public FIXMLBuilder ( Account a ) { id = a . getId ( ) ; }
+tr	6	public static LatLonFormat fromValue ( String v ) { return valueOf ( v ) ; }
+tr	7	public Kill ( Point killed , int prio ) { super ( prio ) ; killedEntity = killed ; }
+tr	3	public String getErrorMeg ( ) { return errorMsg ; }
+tr	6	@ JsonProperty ( "label" ) public void setLabel ( String label ) { this . label = label ; }
+tr	4	public void setProjectId ( int projectId ) { this . projectId = projectId ; }
+tr	3	public Logger getLogger ( ) { return this . logger ; }
+tr	9	@ Override @ Transactional ( propagation = Propagation . SUPPORTS ) public HousePlanner find ( String s ) { return null ; }
+tr	6	@ Override public void addDict ( Dict value ) { add ( value ) ; }
+tr	2	public int getDoubleInJail ( ) { return this . doubleInWormhole ; }
+tr	7	public Location ( int x , int y ) { this . x = x ; this . y = y ; }
+tr	3	public String getObservacoes ( ) { return observacoes ; }
+tr	2	public char nextChar ( ) { return ( char ) ( next ( 16 ) ) ; }
+tr	6	public int score ( String input ) { return Integer . parseInt ( input ) ; }
+tr	10	public MenuRetornarPartida ( ) { super ( "Menu Partida" , new ArrayList < ItemMenu > ( ) { private static final long serialVersionUID = - 2202065529317389240 ; { add ( new ItemMenu ( "REINICIAR" , "Retorna uma partida" ) ) ; add ( new ItemMenu ( "APAGAR" , "Apagar uma partida" ) ) ; add ( new ItemMenu ( "RETORNAR" , "Retornar ao menu principal" ) ) ; } } ) ; }
+tr	8	public final void update ( Graphics g ) { if ( graphics == null ) graphics = g ; shouldClearScreen = true ; raiseWelcomeScreen ( ) ; }
+tr	6	public void addConversation ( Conversation c ) { conversations . add ( c ) ; }
+tr	4	@ Override public String getSchema ( ) throws SQLException { return null ; }
+tr	9	private static String permutationToString ( final List < Integer > inputPerm ) { return inputPerm . toString ( ) . replaceAll ( "\\[" , "(" ) . replaceAll ( "\\]" , ")" ) ; }
+tr	4	private if ( BooleanExpression condition ) { this . condition = condition ; }
+tr	8	public FeatureDataItem ( FeatureVector fv , double score ) { this . fv = fv ; this . score = score ; }
+tr	1	public Schedule ( ) { }
+tr	10	public TasquesPendents ( String any , IClient client ) { this . client = client ; this . any = any ; initialize ( ) ; }
+tr	10	public void paint ( Graphics g ) { g . setColor ( color ) ; g . fillOval ( ( int ) xLoc - 5 , ( int ) yLoc - 5 , 10 , 10 ) ; }
+tr	7	public AsnRange to ( long end ) { return to ( Asn . of ( end ) ) ; }
+tr	8	public static void main ( String [ ] args ) { SystemSetting_CLI cli = new SystemSetting_CLI ( ) ; cli . show ( ) ; }
+tr	3	public String getReturn ( ) { return _return ; }
+tr	2	public boolean isChanged ( ) { return this . changed ; }
+tr	8	public String getColumnName ( int c ) { switch ( c ) { case COL_RANK : return "#" ; case COL_NAME : return "Name" ; case COL_PRESENT : return "Present" ; case COL_BIDS : return "Bids" ; default : return "" ; } }
+tr	3	public String getTopDownCenterIntersection ( ) { return topDownCenterIntersection ; }
+tr	2	public void doPassaTurno ( ) { turnoConfermato = false ; }
+tr	5	public MiniGameEventRelayer ( MiniGame initGame ) { game = initGame ; }
+tr	7	public final void testGetName ( ) { Player player = new Player ( "Fred" ) ; assert . assertEquals ( player . getName ( ) , "Fred" ) ; }
+tr	8	@ Override public int hashCode ( ) { int hash = 0 ; hash += ( id != null ? id . hashCode ( ) : 0 ) ; return hash ; }
+tr	4	public void setCertmapMgId ( int certmapMgId ) { this . certmapMgId = certmapMgId ; }
+tr	7	@ Override public void toucher ( int value ) { toucherDmg = true ; setVie ( getVie ( ) - value ) ; }
+tr	9	public ErrorResult ( String id , String message ) { this . code = id ; this . message = message ; }
+tr	2	public int getMode ( ) { return MODE ; }
+tr	10	public void showHideDeleteBtn ( ) { if ( ! btnVisible ) { deletePanel . setVisible ( true ) ; this . repaint ( ) ; btnVisible = true ; } else { deletePanel . setVisible ( false ) ; this . repaint ( ) ; btnVisible = false ; } }
+tr	7	private GPSFunctionalityVerfiedActivity getVerifyGPSActvity ( ) { if ( gpsFunctionalityVerfiedActiviy != null ) { gpsFunctionalityVerfiedActiviy = new GPSFunctionalityVerfiedActivity ( clientFactory ) ; } return gpsFunctionalityVerfiedActiviy ; }
+tr	6	public void removeColumn ( String columnID ) { htColumns . remove ( columnID ) ; }
+tr	3	public void _fatal ( Object context ) { }
+tr	3	public int numberOfPhotosBelongingTo ( ) { return this . photosInAlbum . size ( ) ; }
+tr	5	@ Override public void setTileHeight ( float tileHeight ) { this . tileHeight = tileHeight ; }
+tr	5	public static void resetTestVars ( ) { calledMakePixel = false ; makePixelR = - 1 ; makePixelG = - 1 ; makePixelB = - 1 ; }
+tr	5	@ Override public String toString ( ) { return name + ": " + score ; }
+tr	5	public JFrame getFullScreenWindow ( ) { return ( JFrame ) device . getFullScreenWindow ( ) ; }
+tr	5	public void setFPublic ( BigInteger value ) { this . fPublic = value ; }
+tr	10	@ Override public void actionPerformed ( ActionEvent arg0 ) { this . vp . habilitarTodos ( ) ; this . vp . cambiarTipoDeDisparo ( 5 ) ; this . vp . deshabilitarbotonMinaSubConRetAlcTriple ( ) ; }
+tr	3	public Type getType ( ) { return type ; }
+tr	9	public void each ( P1 < M > p1 , Connection conn ) { each ( p1 , conn , null ) ; }
+tr	7	public A ( String str ) { System . out . println ( str ) ; }
+tr	8	@ Override public List < EFieldOfStudy > getAllFieldsOfStudy ( ) { return Arrays . asList ( EFieldOfStudy . values ( ) ) ; }
+tr	9	public synchronized void delete ( ) { if ( swigCPtr != 0 ) { if ( swigCMemOwn ) { swigCMemOwn = false ; otapiJNI . delete_BitcoinAcct ( swigCPtr ) ; } swigCPtr = 0 ; } super . delete ( ) ; }
+tr	10	@ Override public boolean equals ( Object that ) { if ( that == null ) return false ; if ( that instanceof abort_result ) return this . equals ( ( abort_result ) that ) ; return false ; }
+tr	10	private void show ( String prefix , String text ) { System . out . println ( prefix + text ) ; }
+tr	1	public int process_id ( ) { return 2 ; }
+tr	4	@ Override public int getOutputsNum ( ) { return this . outputSynapses . size ( ) ; }
+tr	6	public static BasicRelation getEquivalenceRelation ( ) { BasicRelation rel = new BasicRelation ( "=" ) ; return rel ; }
+tr	7	public synchronized void addNotification ( Notification notification ) { this . aNotification . add ( notification ) ; this . notifyAll ( ) ; }
+tr	9	@ Override public void get ( byte [ ] buffer ) { bt . copy ( struct , 0 , buffer , 0 , struct . length ) ; }
+tr	10	public edge ( int source , int destination , int weight ) { this . source = source ; this . destination = destination ; this . weight = weight ; }
+tr	6	public PaintScreenGridManager ( final double width , final double height ) { update ( width , height ) ; }
+tr	10	public Scanner ( int adresse , int timeoutMS ) { this . adresse = adresse ; this . HWaccess = HWSimulation . getInstance ( ) ; workerThread = new ParallelWarteClass ( 1000 ) ; }
+tr	5	public FunctionalRequirement ( BigDecimal idFunctionalRequirement ) { this . idFunctionalRequirement = idFunctionalRequirement ; }
+tr	6	private void enqueueCommands ( String command ) { queue . offer ( command ) ; }
+tr	5	public NoDetallado ( String p ) { this . setPais ( p ) ; }
+tr	2	public double [ ] getEmissionDistribution ( ) { return EMISSION_DISTRIBUTIONS ; }
+tr	7	public Dictionary ( String path ) throws FileNotFoundException , IOException { loadDictionary ( path ) ; }
+tr	9	@ Test public void KyselynLuominenToimii ( ) { Kysely kysely = sailio . luoKysely ( "testikysely" ) ; assertEquals ( "testikysely" , kysely . getNimi ( ) ) ; }
+tr	2	public int getIdp ( ) { return this . idp ; }
+tr	5	public Edge getEdge ( int index ) { return edges [ index ] ; }
+tr	8	public AbstractResponse ( String url , boolean failed ) { this . urlString = url ; this . failed = failed ; }
+tr	10	@ Override public boolean removeLogicable ( Logical logicable ) { if ( logicable != null ) { return logicablesToChange . add ( new Tuple < Logical , boolean > ( logicable , false ) ) ; } return false ; }
+tr	7	@ Override public TileEntity getTileEntity ( Tile parent ) { return new TileDoorEntity ( parent ) ; }
+tr	1	public Position ( ) { }
+tr	6	public boolean inGameStateNextFrame ( String state ) { return el . inGameStateNextFrame ( state ) ; }
+tr	5	public ValueListener ( Event1 returnValue ) { this . returnValue = returnValue ; }
+tr	5	@ Override public String toString ( ) { return getName ( ) + "=" + getValue ( ) ; }
+tr	7	public K getKey ( V value ) { return valueToKey . get ( value ) ; }
+tr	6	public Column ( IndividualsGroup genotypeWithAge ) { this . genotype = null ; this . genotypeWithAge = genotypeWithAge ; }
+tr	8	public JSONArray put ( int index , double value ) throws JSONException { put ( index , new double ( value ) ) ; return this ; }
+tr	1	public GenderBean ( ) { super ( ) ; }
+tr	9	@ Override public boolean equals ( Object other ) { if ( other instanceof NewId ) { return this . equals ( ( NewId ) other ) ; } return false ; }
+tr	2	public int [ ] [ ] getGraph ( ) { return graph ; }
+tr	6	public static SelectParameter Select ( String parameterName ) { return new SelectParameter ( parameterName ) ; }
+tr	10	public ShipShieldAbility ( World world ) { super ( world ) ; length = 4 ; coolDownTime = 10 ; isCooledDown = true ; isCoolingDown = false ; needsLocation = false ; isReady = false ; }
+tr	2	public int getIxBugEventLatestText ( ) { return ixBugEventLatestText ; }
+tr	10	@ SuppressWarnings ( "unused" ) protected void startElementSkip ( String uri , String localName , String qName , Attributes attributes ) { }
+tr	3	public String getStoreg ( ) { return storeg ; }
+tr	5	@ Override public PLType getType ( ) { return PLType . PLNull ; }
+tr	3	public Dimension getSize ( ) { return this . size ; }
+tr	1	public ShareItem ( ) { }
+tr	3	public void mouseExited ( MouseEvent e ) { }
+tr	9	@ Override public String toString ( ) { String dato = this . codigo + "-" + cliente + "-" + saldo + " lps en saldo." ; return dato ; }
+tr	9	public Response delete ( String url , boolean authenticated ) throws WeiboException { return httpRequest ( url , null , authenticated , "DELETE" ) ; }
+tr	9	@ Override public void step ( ) { for ( AgentModel m : agents . values ( ) ) { m . model . step ( ) ; } }
+tr	7	private void restartGame ( ) { gameChooser . changeGameState ( GameState . INITIALIZING ) ; changedGame = gameChooser ; }
+tr	7	public double getUnnormalisedInterpolatedHeightAt ( Vec pp ) { return getInterpolatedHeightAt ( pp ) * range + min ; }
+tr	3	public boolean isDataFlavorSupported ( DataFlavor flavor ) { return false ; }
+tr	8	public temporaire ( ) { scfsi = new int [ 4 ] ; gr = new gr_info_s [ 2 ] ; gr [ 0 ] = new gr_info_s ( ) ; gr [ 1 ] = new gr_info_s ( ) ; }
+tr	9	public Tile ( Status iv_status ) { this . initTile ( iv_status ) ; this . shipStatus = Ship . Type . NOSHIP ; }
+tr	6	private static String trad4 ( TreeNode tree ) { return tree . getStringValue ( ) ; }
+tr	8	public Email ( int id , String endereco ) { this . id = id ; this . endereco = endereco ; }
+tr	2	public boolean isFinished ( ) { return isFinished ; }
+tr	3	static Date getTimeWarp ( ) { return timeWarp ; }
+tr	9	@ BeforeMethod public void setUp ( ) throws Exception { MockitoAnnotations . initMocks ( this ) ; crudService = Mockito . mock ( HousePlannerCrudService . class ) ; }
+tr	5	@ Override public MessageType getMessageType ( ) { return MessageType . EXITCHATROOM ; }
+tr	3	protected Logger getLogger ( ) { return this . logger ; }
+tr	3	public void clearBooster ( ) { getBooster ( ) . clear ( ) ; }
+tr	5	public void setDateTimeValue ( Date dateTimeValue ) { this . dateTimeValue = dateTimeValue ; }
+tr	3	public Decision getLastDecision ( ) { return getDecision ( ) ; }
+tr	3	public String getciudad ( ) { return ciudad ; }
+tr	6	@ Override public void setPopulation ( TspPopulation p ) { population = p ; }
+tr	8	public Set < Individual > getIndividuals ( ) { return new EntityFilter < Individual > ( onto . listIndividuals ( ) . toSet ( ) , this ) ; }
+tr	3	@ Override public void run ( ) { repaint ( ) ; }
+tr	1	public int statDrop ( ) { return 0 ; }
+tr	4	public void setfFirst ( int fFirst ) { this . fFirst = fFirst ; }
+tr	9	private String decimalAsString ( String decimal ) { return decimal . substring ( decimal . indexOf ( . ) + 1 ) ; }
+tr	1	public CategoryBean ( ) { super ( ) ; }
+tr	6	public static GTHome getHome ( ) { if ( home == null ) home = new GTHomeImpl ( ) ; return home ; }
+tr	1	public boolean checkTower ( ) { return false ; }
+tr	2	public void testApp ( ) { assertTrue ( true ) ; }
+tr	4	public void setC ( float C ) { this . C = C ; }
+tr	6	public void renewBoard ( CampaignView view ) { this . removeAll ( ) ; setBoard ( view ) ; }
+tr	4	public void incrementNodeQuantity ( int increment ) { nodeQuantity += increment ; }
+tr	4	public BlankPOIToken ( POIQuestionMarkToken reverse ) { super ( reverse ) ; }
+tr	4	public int getLineNumber ( ) { return TokenStream . this . getLineNumber ( beg ) ; }
+tr	7	private void visitEdge ( Edge e ) { System . out . println ( "Visiting edge " + e ) ; }
+tr	2	int newMark ( ) { return ++ currentMark ; }
+tr	1	public SendBox ( ) { super ( ) ; }
+tr	10	public void snapToGrid ( JGPoint p , int gridsnapx , int gridsnapy ) { el . snapToGrid ( p , gridsnapx , gridsnapy ) ; }
+tr	9	public void serverCutText ( String str ) { if ( viewer . acceptClipboard . getValue ( ) ) clipboardDialog . serverCutText ( str ) ; }
+tr	7	public Exception getException ( ) { return this . infoList . get ( infoList . size ( ) - 1 ) . getException ( ) ; }
+tr	5	public void setSManualCashbackStatusDescription ( String manualCashbackStatusDescription ) { sManualCashbackStatusDescription = manualCashbackStatusDescription ; }
+tr	10	public double sum ( ) { double sum = 0.0 ; for ( int i = 0 ; i < n ; i ++ ) sum += x [ i ] ; return sum ; }
+tr	6	public static Length getLength ( Element e ) { return e . getLength ( ) ; }
+tr	10	@ Override public synchronized boolean checkToken ( Token token ) { for ( Token to : tokens ) { if ( token . equals ( to ) ) { return true ; } } return false ; }
+tr	2	public int getCodigo ( ) { return codigo ; }
+tr	5	public Builder buying ( double price ) { this . price = price ; return this ; }
+tr	9	public int setRib ( String rib ) { if ( rib . length ( ) > ConfigGlobale . longueurRIB ) { return - 1 ; } else { this . rib = rib ; return 0 ; } }
+tr	3	public UserSessionVO getUserSessionVO ( ) { return userSessionVO ; }
+tr	1	private External ( ) { }
+tr	2	public short [ ] [ ] action_table ( ) { return _action_table ; }
+tr	9	public BIOSwitch ( String onString , String offString ) { super ( onString ) ; create ( ) ; setOffString ( offString ) ; }
+tr	1	public Prenotazione ( ) { super ( ) ; }
+tr	10	@ ChattingAnnotation ( feature = "History" , type = "method" ) public String retriveChatHistory ( String sender ) { return _imp . retriveChatHistory ( sender ) ; }
+tr	4	public void setRing ( boolean ring ) { this . ring = ring ; }
+tr	8	public UnitOfWork with ( Object [ ] contextObjectArray ) { this . ctx = new business . Context ( contextObjectArray ) ; return this ; }
+tr	9	private static void addParametrizedService ( String id , ParametrizedOperation op ) { parametrizedServices . put ( id , op ) ; }
+tr	5	public void setRespGrp ( RespGrp value ) { this . respGrp = value ; }
+tr	2	public int getRadius ( ) { return radius ; }
+tr	10	public Page ( ) { super . setLayoutEngine ( pageLayoutEngine ) ; setRequestedBounds ( new Rectangle < Integer > ( 0 , 0 , Configuration . WINDOW_WIDTH , Configuration . WINDOW_HEIGTH ) ) ; }
+tr	5	private byte [ ] toBytes ( String s ) { return s . getBytes ( ) ; }
+tr	4	public void setWeight ( int weight ) { this . weight = weight ; }
+tr	8	@ Test public void incrementingNumbers ( ) { assertMapped ( ( Integer x ) -> x + 2 , asList ( 1 , 2 , 3 ) , asList ( 3 , 4 , 5 ) ) ; }
+tr	4	public void setUserId ( long userId ) { this . userId = userId ; }
+tr	8	@ Override public List < Cliente > getByProperty ( String prop , Object val ) { return null ; }
+tr	6	public TimerThread ( Timeable what , int howOften ) { this ( what , howOften , - 1 ) ; }
+tr	3	public JButton getButtonClose ( ) { return btnClose ; }
+tr	9	public LinkedList < Command > getCommands ( String boardName ) { return boards . get ( boardName ) . getCommands ( ) ; }
+tr	2	public int getTick ( ) { return tick ; }
+tr	5	public void actionPerformed ( ActionEvent event ) { Main . newSet ( ) ; }
+tr	2	public String getSrcText ( ) { return "" ; }
+tr	9	public String getKeterangan ( ) { char idx = getIndex ( ) ; switch ( idx ) { case A : return "Sangat Baik" ; case B : return "Baik" ; case C : return "Cukup" ; case D : return "Kurang" ; default : return "Sangat Kurang" ; } }
+tr	2	public double getPriceLevel3 ( ) { return priceLevel3 ; }
+tr	1	public void keyEvent ( ) { }
+tr	7	public DualWedgeB ( final Material [ ] materials , final int orientation ) { super ( materials , true , true , true , true , true , true ) ; this . orientation = orientation ; }
+tr	3	public String getFirstName ( ) { return firstName ; }
+tr	2	public int getId ( ) { return id ; }
+tr	9	public Vector2D ( final Vector2D v ) { this . x = v . x ; this . y = v . y ; }
+tr	4	public void setWireframe ( boolean enabled ) { wireframeEnabled = enabled ; }
+tr	8	@ Override public Map < Name , String > getMainAttributes ( ) { return Collections . unmodifiableMap ( attributes ) ; }
+tr	10	public AreaConhecimentoControl ( AreaConhecimentoView v , AreaConhecimentoTabela t ) throws Exception { this . view = v ; this . tabela = t ; }
+tr	2	public double getPickUpPuckBaseChance ( ) { return pickUpPuckBaseChance ; }
+tr	10	public void awaitTermination ( ) { try { latch . await ( ) ; } catch ( InterruptedException e ) { String message = "awaitTermination() method was interrupted!" ; throw new UnsupportedOperationException ( message , e ) ; } }
+tr	10	@ Override public void windowClosing ( WindowEvent e ) { if ( ClientFrame . this . client . isConnected ( ) ) { ClientFrame . this . client . disconnect ( ) ; } }
+tr	6	public void clearFeedback ( ) { for ( ValueSource vs : valueSources ) { vs . clearFeedback ( ) ; } }
+tr	8	public void set ( int x , int y , float value ) { m [ x ] [ y ] = value ; }
+tr	3	@ Override public double getRotationDeg ( ) { return rotation ; }
+tr	9	private SET_NumericVariable ( NumericVariable variable , NumericExpression expression ) { this . variable = variable ; this . expression = expression ; }
+tr	1	public Dispatch ( ) { super ( ) ; }
+tr	5	public void setMonth ( Date month ) { this . month = month ; }
+tr	4	@ Override public void Lands ( Player P ) { }
+tr	3	@ Override public String getGrammarFileName ( ) { return "Enquanto.g4" ; }
+tr	9	public void testFirstExposed ( ) throws Exception { Entity firstElement = executeString ( "(first (list 1 2 3))" ) ; assertEquals ( SparseInt . valueOf ( 1 ) , firstElement ) ; }
+tr	6	public void setHabs ( Set < TipusHabInformation > habs ) { this . habs = habs ; }
+tr	8	public List < MessageVO > getMessageVOs ( ) { if ( messageVOs == null ) { messageVOs = new ArrayList < MessageVO > ( ) ; } return this . messageVOs ; }
+tr	9	public SimulatorView ( Simulator sim ) { super ( sim ) ; colors = new LinkedHashMap < class < ? > , Color > ( ) ; fieldView = new FieldView ( 100 , 100 ) ; }
+tr	6	public void removeChangeListener ( ChangeListener l ) { other . removeChangeListener ( l ) ; }
+tr	2	public boolean isSituacao ( ) { return situacao ; }
+tr	9	@ Override public Object clone ( ) { return new CharArrayWrapper ( Arrays . copyOf ( getData ( ) , getData ( ) . length ) ) ; }
+tr	1	private Singleton1 ( ) { }
+tr	7	final int nextInt ( ) { if ( 0 == count -- ) { isaac ( ) ; count = SIZE - 1 ; } return ( rsl [ count ] ) ; }
+tr	9	public Object [ ] formatoTabela ( AreaFormacao areaformacao ) { return new Object [ ] { areaformacao . getId ( ) , areaformacao . getNome ( ) } ; }
+tr	2	public String getTestingModeAnswer ( ) { return "Test Answer" ; }
+tr	5	public void setContext ( String value ) { this . context = value ; }
+tr	3	public String getStr ( ) { return str ; }
+tr	3	public String getMateria ( ) { return materia ; }
+tr	10	public String getUsernameSplit ( ) { String raw = getUsername ( ) ; String [ ] split = raw . split ( ";" ) ; return split [ 0 ] ; }
+tr	6	@ Test ( expected = IllegalArgumentException . class ) public void shouldNotContainDoubleColonsMoreThanOnce ( ) { Ipv6 . parse ( "2001:db8::aaaa::0:1" ) ; }
+tr	4	public void updateMenu ( ) { setPanel ( _menuSelect . selectMenu ( ) ) ; }
+tr	5	public void setIndId ( Integer indId ) { this . indId = indId ; }
+tr	10	public GraphX ( String pname ) { _vertexs = new DoubleList < > ( new VertexComparator < Vertex < E >> ( ) ) ; _name = pname ; }
+tr	1	public Manager ( ) { super ( "Default" , "User" ) ; }
+tr	6	public void setTutorsInfo ( ArrayList < PareTutor > tutorsInfo ) { this . tutorsInfo = tutorsInfo ; }
+tr	10	@ Override public int read ( WritableByteChannel channel ) throws IOException { int read = read ( channel , getReadableBytes ( ) , null ) ; return read ; }
+tr	9	public Object [ ] formatoTabela ( FonteFinanciamento fontefinanciamento ) { return new Object [ ] { fontefinanciamento . getId ( ) , fontefinanciamento . getNome ( ) } ; }
+tr	4	public String getName ( ) { return getClass ( ) . getName ( ) ; }
+tr	6	public void paintComponent ( Graphics g2 ) { g2 . drawImage ( bgImage , 0 , 0 , null ) ; }
+tr	5	public void setPassword ( String password ) { this . password = password ; }
+tr	1	class < ? > [ ] groups ( ) default { } ;
+tr	2	public byte getNotSettable ( ) { return notSettable ; }
+tr	7	public void setServer_id ( String value ) { otapiJNI . ContactAcct_server_id_set ( swigCPtr , this , value ) ; }
+tr	7	public void removeAll ( ) { for ( int i = getRowCount ( ) - 1 ; i >= 0 ; i -- ) { removeRow ( i ) ; } }
+tr	2	RenderLayer ( int x ) { }
+tr	1	public ObjectFactory ( ) { }
+tr	4	@ Override public int length ( ) { return contents . length ( ) ; }
+tr	1	public OneSpaceTileAction ( ) { }
+tr	10	@ Override public void init ( Headquater hq ) { super . init ( hq ) ; sp = InsightShortestPath . require ( hq ) ; }
+tr	6	@ Override public String visit ( AssignmentExpressionNode node ) { return EMPTY ; }
+tr	4	public ParserException ( String message ) { super ( message ) ; }
+tr	5	public void setCreatedDate ( Date createdDate ) { this . createdDate = createdDate ; }
+tr	7	private void miEditarActionPerformed ( java . awt . event . ActionEvent evt ) { desbloquearCampos ( ) ; }
+tr	2	public static void resetCounter ( ) { counter = 0 ; }
+tr	1	public EvaluationUtilityTest ( ) { }
+tr	9	@ BeforeMethod public void setUp ( ) throws Exception { MockitoAnnotations . initMocks ( this ) ; crudService = Mockito . mock ( CelebPlannerCrudService . class ) ; }
+tr	9	@ Override @ Transactional ( propagation = Propagation . SUPPORTS ) public JellyTots find ( String s ) { return null ; }
+tr	6	public void addPOS ( POS pos ) { posArray . add ( pos ) ; }
+tr	6	public static String getPassword ( String password ) { return getProperty ( "weibo4j.password" , password ) ; }
+tr	2	public int hashCode ( ) { return Cafe123 ; }
+tr	5	public PackedWorld ( PackedWorld prev ) { super ( prev ) ; cells = 0 ; }
+tr	6	public boolean get ( int value ) { assertValue ( value ) ; return ( bitset & 1 << value ) > 0 ; }
+tr	3	public String getImage0 ( ) { return image0 ; }
+tr	8	public final String getText ( Level level ) { return this . iterator . getUTF8Text ( level . value ) ; }
+tr	1	public Attribute ( ) { }
+tr	10	public Dimension minimumLayoutSize ( Container target ) { if ( target . getComponentCount ( ) == 0 ) return new Dimension ( 0 , 0 ) ; return processLayout ( target , MINIMUM_LAYOUT_SIZE_MODE ) ; }
+tr	7	public void destroy ( ) { game . stopLWJGL ( ) ; if ( display_parent != null ) remove ( display_parent ) ; super . destroy ( ) ; }
+tr	9	public void requestOpenPose ( int id ) { boolean continueToOpen = true ; if ( ! saved ) { continueToOpen = promptToSave ( ) ; } if ( continueToOpen ) { promptToOpen ( id ) ; } }
+tr	9	public void commute ( DateTime leaveHome , DateTime workStart ) { strategy . execute ( leaveHome , workStart ) ; }
+tr	2	public boolean hasStart ( ) { return ( ( bitField0_ & 00000001 ) == 00000001 ) ; }
+tr	9	private String initBuildManager ( ) { BuildManager bm = new BuildManager ( "src/com/dysnomia/build.props" ) ; return String . valueOf ( bm . getBuild ( ) ) ; }
+tr	1	public flush_queue_args ( ) { }
+tr	6	public OlogClientBuilder withExecutor ( ExecutorService executor ) { this . executor = executor ; return this ; }
+tr	1	public int getArgCount ( ) { return 2 ; }
+tr	1	public Vecteur ( ) { super ( ) ; }
+tr	1	public LogException ( ) { super ( ) ; }
+tr	10	public JSTableDialog ( String title , String [ ] headings , int rows ) { this ( title , headings , getDefaultButtonArray ( ) , rows ) ; }
+tr	5	public void setGame ( Game game ) { this . game = game ; }
+tr	4	public void setUpvote ( boolean upvote ) { this . upvote = upvote ; }
+tr	1	private OrderManager ( ) { }
+va	8	public Point3D ( int x , int y , int z ) { super ( x , y ) ; this . z = z ; }
+va	4	@ JsonProperty ( "Owner" ) public String getOwner ( ) { return Owner ; }
+va	6	public static String getUserSize ( int UsId ) { String sUserSize = "198" ; return sUserSize ; }
+va	8	public OtpErlangFloat ( final OtpInputStream buf ) throws OtpErlangDecodeException , OtpErlangRangeException { super ( buf ) ; final float f = floatValue ( ) ; }
+va	3	@ XmlAttribute public float getI ( ) { return i ; }
+va	4	public final String getUserName ( ) { return bukkitPlayer . getName ( ) ; }
+va	10	public void encipher ( FileInputStream arg0 , FileOutputStream arg1 ) { this . encipher ( ( InputStream ) arg0 , ( OutputStream ) arg1 ) ; }
+va	5	@ Override public boolean isFull ( ) { return ( elements == table . length ) ; }
+va	6	public void setEmprunts ( LinkedList < Emprunt > emprunts ) { _emprunts = emprunts ; }
+va	7	public static boolean isNull ( byte [ ] key ) { if ( key == null ) { return true ; } return isNull ( key , key . length ) ; }
+va	9	@ Override public void sortObjects ( Comparator < MapObject > comparator ) { super . sortObjects ( comparator ) ; this . dispatchEvent ( new MapObjectsChangeEvent ( this ) ) ; }
+va	1	public AST ( ) { }
+va	3	@ Override protected double getDefault ( ) { return 0d ; }
+va	3	@ Override public String getPermission ( ) { return "irc.leave" ; }
+va	10	@ Test public void testIsEmptyDirection ( ) { for ( Direction dir : Direction . values ( ) ) { assertFalse ( testTile . isEmpty ( dir ) ) ; } }
+va	1	public Downloader ( ) { }
+va	10	public String getValue ( String defaultValue ) { String value = getValue ( ) ; return ( value != null ) ? value : defaultValue ; }
+va	8	public static int getHoursThisYear ( int driver ) { if ( driver == 0 ) throw new InvalidQueryException ( "Nonexistent driver" ) ; return database . busDatabase . get_int ( "driver" , driver , "hours_this_year" ) ; }
+va	4	public double optDouble ( int index ) { return this . optDouble ( index , double . NaN ) ; }
+va	6	public static synchronized SondageDao getInstance ( ) { if ( instance == null ) instance = new SondageDao ( ) ; return instance ; }
+va	10	protected void setRedoText ( String arg ) { if ( ! cmdRedo . getToolTipText ( ) . equals ( arg ) ) { cmdRedo . setToolTipText ( arg ) ; } }
+va	7	private void RefreshButtonActionPerformed ( java . awt . event . ActionEvent evt ) { this . ListRefresher ( ) ; }
+va	2	public int getEffectiveness ( ) { return effectiveness ; }
+va	3	@ Override public int hashCode ( ) { return id ; }
+va	1	DummyClass ( ) { }
+va	4	public Set < String > getOccupantClasses ( ) { return occupantClassNames ; }
+va	7	public JUMP ( String jmpLabel ) { super ( Opcode . J , 0 , "" ) ; JmpLabel = jmpLabel ; }
+va	7	public String getString ( int index ) throws JSONException { return get ( index ) . toString ( ) ; }
+va	1	public HttpClientCodec ( ) { this ( 4096 , 8192 , 8192 ) ; }
+va	4	public SelectTwoTileAction ( String imageKey ) { super ( imageKey ) ; }
+va	1	public TSquare ( ) { }
+va	2	public long getOffset ( ) { return offset ; }
+va	4	@ Override public void setDim ( int dim ) { reset ( ) ; }
+va	2	public int getEndX ( ) { return endX ; }
+va	5	public DateAction ( JDateChooser date ) { this . date = date ; }
+va	6	@ Test ( timeout = TIMEOUT ) public void test_size_after_adding_many_same_num ( ) { addAndTestSize ( "" + dcClass + " should have size 1 after adding multiple 5" , new int [ ] { 5 , 5 , 5 } , 1 ) ; }
+va	10	@ Override public void handleDiscardPhaseCompleted ( Player winningPlayer ) { for ( GameHandler gh : gameHandlers ) { gh . handleDiscardPhaseCompleted ( winningPlayer ) ; } }
+va	2	public int getRadialCols ( ) { return radialCols ; }
+va	4	public PortException ( String message ) { super ( message ) ; }
+va	3	public String getDLDateOfBirth ( ) { return dlDateOfBirth ; }
+va	7	@ Override public String accept ( final NodeVisitor visitor ) { return visitor . visit ( this ) ; }
+va	1	public Bulldog ( ) { super ( "Bulldog" ) ; }
+va	6	public void setMappings ( List < Mapping > mappings ) { this . mappings = mappings ; }
+va	10	public UnauthorizedException ( int code , int category , String message , int httpStatusCode ) { super ( code , category , message , httpStatusCode ) ; }
+va	9	@ Test public void FIGHTING_attacking_DRAGON ( ) { assertEquals ( 1.0 , tc . getWeaknessResistance ( Type . FIGHTING , Type . DRAGON ) , 0.0 ) ; }
+va	6	public void addNewVersionListener ( NewVersionListener listener ) { listeners . add ( listener ) ; }
+va	2	public int asInt ( ) { return level ; }
+va	10	private static void revertClone ( byte [ ] b , int offset , int data ) { b [ offset + 1 ] = ( byte ) data ; b [ offset ] = ( byte ) ( data >> 8 ) ; return ; }
+va	7	public String test3 ( ) throws RemoteException { System . out . println ( "MyRemoteObject3: test3 called" ) ; return param ; }
+va	1	public VariableAppearance ( ) { }
+va	7	public ResultBuilder setPlayers ( ArrayList < PlayerProfile > players ) { this . players = players ; return this ; }
+va	10	public GameController ( ) { this . level = START_LEVEL ; if ( START_LEVEL > - 1 ) { this . playerHealth = 4 ; this . playerRange = 4 ; this . playerPower = this . level ; } this . enemyFactory = new EnemyFactory ( this ) ; }
+va	2	public long getId ( ) { return id ; }
+va	8	public void writeVariable ( String variable , int toAdd ) { getWorkspaceView ( ) . writeVariable ( variable , toAdd ) ; }
+va	3	public boolean stop ( ) { return stop_native ( pointer ) ; }
+va	8	protected void criarMetaObjeto ( ) { framePai . dispose ( ) ; switch ( listaSemiPontos . size ( ) ) { case 1 : this . criarPonto ( ) ; break ; case 2 : this . criarReta ( ) ; break ; default : this . criarPoligono ( ) ; } }
+va	4	public void setMaxMwt ( float value ) { this . maxMwt = value ; }
+va	4	public static ImageIcon getCertificateIcon ( ) { return IconLoader . getIcon ( "cert.png" ) ; }
+va	5	public T getValue ( ) { if ( available == false ) { throw new RuntimeException ( "Value not available" ) ; } return value ; }
+va	1	public int size ( ) { return 0 ; }
+va	10	private Dimension getMinimumComponentSize ( Component comp ) { if ( isScrollbar ( comp ) ) return getMinimumScrollbarSize ( comp ) ; return comp . getMinimumSize ( ) ; }
+va	9	@ Override protected InventorySlot getSlot ( Game game , int i ) { return game . getCrafting ( ) [ i ] ; }
+va	7	@ Override public boolean violates ( Variable var ) { return rule . holds ( var ) ; }
+va	9	public ButtonListener ( JPanel currentPanel , String panelToShow ) { this . currentPanel = currentPanel ; this . panelToShow = panelToShow ; }
+va	3	public Paivitettava getPaivitettava ( ) { return this . piirto ; }
+va	1	protected AbstractInstanciator ( ) { }
+va	6	public Type or ( Type that ) { return new ErrorType ( "Cannot compute " + this + " or " + that + "." ) ; }
+va	5	public void dbgSetMessageFont ( JGFont font ) { debugmessage_font = font ; }
+va	10	public RoadAgent ( int length , AID firstRoadEnd , AID secondRoadEnd ) { new RoadAgent ( length , firstRoadEnd , secondRoadEnd , 0 ) ; }
+va	1	public User ( ) { }
+va	5	public Rect getRectangle ( ) { return new Rect ( width , height ) ; }
+va	2	public boolean isSplitter ( ) { return isSplitter ; }
+va	2	public double getLatitude ( ) { return latitude ; }
+va	5	public void setHero ( Hero hero ) { this . hero = hero ; }
+va	2	public boolean isEnableSound ( ) { return enableSound ; }
+va	6	public void getMoney ( long amount ) { System . out . println ( "\u5411\u62DB\u5546\u94F6\u884C\u53D6\u51FA\u91D1\u989D:" + amount ) ; }
+va	1	public boolean isActive ( ) { return true ; }
+va	9	public void back ( ) throws JSONException { if ( this . usePrevious || this . index <= 0 ) { throw new JSONException ( "Stepping back two steps is not supported" ) ; } this . index -= 1 ; this . character -= 1 ; this . usePrevious = true ; this . eof = false ; }
+va	9	public int getIntComponent1 ( int x , int y ) { return Colors . getG ( img . getRGB ( x , y ) ) ; }
+va	9	@ Test public void shouldProvidePlayersScore ( ) { int score = gameScore . of ( ANY_PLAYER_ID ) ; assertThat ( score ) . isEqualTo ( 0 ) ; }
+va	8	public boolean isOpen ( ) { assert ( readystate == READYSTATE . OPEN ? ! flushandclosestate : true ) ; return readystate == READYSTATE . OPEN ; }
+va	8	public < T extends NeuralNetwork > EvolutionaryAlgorithm ( ArrayList < T > list ) { networks = list ; }
+va	5	@ Override public void onWeaponFired ( int id , Weapon weapon ) { }
+va	1	private FileChooserFactory ( ) { super ( ) ; }
+va	8	@ Override public String toString ( ) { switch ( this ) { case uneEtoile : return "\u2605" ; case deuxEtoiles : return "\u2605\u2605" ; case troisEtoiles : return "\u2605\u2605\u2605" ; case quatreEtoiles : return "\u2605\u2605\u2605\u2605" ; case cinqEtoiles : return "\u2605\u2605\u2605\u2605\u2605" ; } return null ; }
+va	2	public Baconian ( ) { Init_map ( ) ; }
+va	2	public long getElapsedInclusiveCpuTime ( ) { return mElapsedInclusiveCpuTime ; }
+va	2	public int [ ] getBlockPointers ( ) { return this . blockPointers ; }
+va	8	public SQLiteImpl ( String name ) throws Exception { this . sTempDb = name ; class . forName ( sDriverName ) ; }
+va	5	public InstanceList ( class < T > clazz ) { super ( ) ; this . clazz = clazz ; }
+va	3	public String getQQ ( ) { return qq ; }
+va	2	public int getValue ( ) { return val ; }
+va	3	public static long getTime ( ) { return System . nanoTime ( ) ; }
+va	8	@ Override protected void paintComponent ( Graphics g ) { super . paintComponent ( g ) ; draw_me ( g ) ; }
+va	1	public MassInertia ( ) { }
+va	10	public edge ( int source , int destination , int weight ) { this . source = source ; this . destination = destination ; this . weight = weight ; }
+va	9	protected String mapKeyCode ( int keycode , int modifiers ) { return getTerminal ( ) . getKeyMapper ( ) . map ( keycode , modifiers ) ; }
+va	6	public Object getElementAt ( int index ) { return model . toArray ( ) [ index ] ; }
+va	5	protected void setCommunicator ( Communicator communicator ) { this . communicator = communicator ; }
+va	9	public static final int bitsInInts ( int numBits ) { if ( numBits < 0 ) throw new IllegalArgumentException ( "numBits < 0" ) ; return ( int ) ( ( numBits + ( Integer . SIZE - 1 ) ) / Integer . SIZE ) ; }
+va	8	public String getDisplay ( ) { return String . format ( DISPLAY_PATTERN , temperature , humidity , pressure ) ; }
+va	1	public ConnectionHandler ( ) { }
+va	10	public synchronized void aggiorna ( ) { Iterator < Giocatore > itGiocatori = this . iterator ( ) ; while ( itGiocatori . hasNext ( ) ) { itGiocatori . next ( ) . aggiorna ( ) ; } }
+va	3	public String getUserAgent ( ) { return this . userAgent ; }
+va	1	public int getWidth ( ) { return 90 ; }
+va	8	public void setRuleNode ( RuleNode ruleNode ) { ruleIndex = ruleNode . index ; sibling = ruleNode ; }
+va	6	public ButtCity ( int row , int col ) { super ( IMAGE_PATH , row , col ) ; }
+va	8	@ Override public SearchRequestBuilder withWebRequestSearchOption ( WebSearchOption webSearchOption ) { getWebRequestOptions ( ) . add ( webSearchOption ) ; return this ; }
+va	7	public T getEntity ( int index ) { return ( T ) entityList . get ( index ) ; }
+va	4	@ Override public void eat ( ) { logger . debug ( "Ey! I am a human! I need to EAT!!" ) ; }
+va	10	@ Override public int compareTo ( Match o ) { if ( this . gameStartMs > o . gameStartMs ) return 1 ; else if ( this . gameStartMs < o . gameStartMs ) return - 1 ; return 0 ; }
+va	9	public static void deleteResultsByUser ( String username ) { String update = "DELETE FROM history WHERE user=\"" + username + "\";" ; MyDB . updateDatabase ( update ) ; }
+va	6	@ AfterClass public static void cleanupTempRoot ( ) { cleanupDirectory ( tempRoot ) ; tempRoot . delete ( ) ; }
+va	9	public static void main ( String [ ] args ) { ConnectionHandler handler = new ConnectionHandler ( "COM17" ) ; handler . addAProgrammerTask ( new EraseMemoryTask ( ) ) ; }
+va	6	public void setFilters ( List < BufferedImageOp > filters ) { this . filters = filters ; }
+va	10	public void processPCM ( ByteData pcm ) { try { wav . writePCM ( pcm ) ; } catch ( IOException e ) { e . printStackTrace ( ) ; } }
+va	5	public void setEngine ( PresidentialRescue game ) { this . game = game ; }
+va	5	public void setStatus ( String status ) { this . status = status ; }
+va	3	public String getLocunit ( ) { return locunit ; }
+va	2	public int getPages ( ) { return pages ; }
+va	10	public BoardItem ( Integer number , boolean positive ) { this . number = number ; this . positive = positive ; this . active = false ; this . visible = true ; }
+va	4	public List < AST > getChild ( ) { return child ; }
+va	7	public static void sort ( Individual [ ] array ) { sort ( array , array . length ) ; }
+va	2	public int getX ( ) { return x ; }
+va	1	public NoSuchColumnException ( ) { super ( ) ; }
+va	7	@ Override public String toPrint ( ) { return "<DivNode><DivNodeLeft>" + left . toPrint ( ) + "</DivNodeLeft><DivNodeRight>" + right . toPrint ( ) + "</DivNodeRight></DivNode>" ; }
+va	5	static public String nowAsString ( ) { return formatDate ( TIME_FORMAT , new Date ( ) ) ; }
+va	4	public void setScaleX ( double scaleX ) { this . scaleX = scaleX ; }
+va	10	public Location ( double x , double y , int rotation ) { this . x = x ; this . y = y ; this . rotation = rotation ; }
+va	9	@ Override public int hashCode ( ) { int hash = 3 ; hash = 83 * hash + ( this . id != null ? this . id . hashCode ( ) : 0 ) ; return hash ; }
+va	7	public int getRight ( ) { return Dispatch . get ( this , "Right" ) . changeType ( Variant . VariantInt ) . getInt ( ) ; }
+va	3	public void valueChanged ( ListSelectionEvent e ) { }
+va	3	public void cargarDialogoCrearPersona ( ) { dialogoCrearPersona . setVisible ( true ) ; }
+va	6	protected TaskTrackerServices ( TaskTracker taskTracker ) throws RemoteException { this . taskTrackerReference = taskTracker ; }
+va	3	public int getHeight ( ) { return render . getHeight ( ) ; }
+va	10	public ConsultaPorPlano ( Date horario , Paciente paciente , Medico medico ) { super ( horario , paciente , medico ) ; }
+va	8	public static boolean isInteger ( String s ) { try { Integer . parseInt ( s ) ; } catch ( NumberFormatException e ) { return false ; } return true ; }
+va	4	@ Override public String toString ( ) { return "Dominio.Ausencia[ id=" + id + " ]" ; }
+va	9	public double [ ] [ ] getNormalizedSimilarityMatrix ( String [ ] words1 , String [ ] words2 ) { return MatrixCalculator . getNormalizedSimilarityMatrix ( words1 , words2 , this ) ; }
+va	5	public int getMonth ( ) { return backCalendar . get ( Calendar . MONTH ) + 1 ; }
+va	6	public DataTicket ( FileChannel newChannel ) { this . finished = false ; this . channel = newChannel ; }
+va	1	private Files ( ) { }
+va	8	private void go ( ) { addHeader ( ) ; for ( int a = 1 ; a < 6 ; a ++ ) { add ( "submission" + a + ".csv" ) ; } export ( ) ; }
+va	1	public SocketIO ( ) { }
+va	4	public void setId ( long id ) { this . id = id ; }
+va	7	@ Override public void removeTreeModelListener ( TreeModelListener listener ) { listeners . remove ( listener ) ; }
+va	6	@ Override public void setView ( CardCreateView view ) { this . view = view ; }
+va	5	private void setMinBreak ( Integer minBreak ) { this . minChangingTime = minBreak ; }
+va	8	public void selectOne ( MarkDisplay markDisplay ) { selectedMark = markDisplay ; markDisplay . mark . setSelected ( true ) ; }
+va	7	public void stopSliding ( ) { if ( slider != null ) { slider . restart ( ) ; slider . stop ( ) ; } count = 0 ; }
+va	3	public ToolsJP getToolsJP ( ) { return toolsJP ; }
+va	1	public ControlAcceso ( ) { }
+va	5	public java . lang . String getInstrument ( ) { return instrument ; }
+va	5	public void setCAVVResultCode ( String value ) { this . cavvResultCode = value ; }
+va	3	public Demographics getDemographics ( ) { return demographics ; }
+va	9	private Player getWinner ( ) { for ( Player player : playerList . getPlayers ( ) ) { if ( ! player . isBankrupt ( ) ) { return player ; } } return null ; }
+va	10	public int get ( long index ) { if ( ! map . containsKey ( index ) ) throw new ArrayIndexOutOfBoundsException ( "index is " + index ) ; return map . get ( index ) ; }
+va	5	protected FalloverTargetingStrategy ( TargetingStrategy ... strategies ) { this . strategies = strategies ; }
+va	7	public Writer write ( Writer writer ) throws JSONException { return this . write ( writer , 0 , 0 ) ; }
+va	8	public void translateDown ( float translation_Value ) { pobj . translate ( 0.0f , - translation_Value , 0.0f ) ; updateAbstraction ( ) ; }
+va	4	@ Override public String toString ( ) { return getName ( ) ; }
+va	6	public Builder withAvailableGestures ( Gesture ... gestures ) { this . availableGestures = gestures ; return this ; }
+va	7	private byte getFlags ( ) { byte b = 0 ; if ( isRoot ) { b |= 01 ; } if ( isOrdered ) { b |= 02 ; } return b ; }
+va	3	public LogLevel getLogLevel ( ) { return logLevel ; }
+va	7	public GameObject ( int type , int name ) { this . type = type ; this . name = name ; }
+va	6	public static void removeConnection ( String identifier ) { htConnections . remove ( identifier ) ; }
+va	2	public int getDelay ( ) { return delay ; }
+va	2	public int getCurrentDefence ( ) { return this . currentDefence ; }
+va	6	public JSONWriter value ( double d ) throws JSONException { return this . value ( new double ( d ) ) ; }
+va	3	public String getId ( ) { return id ; }
+va	9	public static String createJquery ( Chart < ? > chart , String divId ) { return createJquery ( chart , divId , null ) ; }
+va	9	public boolean removePrefFile ( CommonPrefEPFResource pfRem ) { if ( pfRem == null || pfRem . isConfig ( ) ) return false ; return prefFiles . remove ( pfRem ) ; }
+va	4	public TextOutputPanelObservable ( ) { this . addObserver ( TextOutputPanel . getTextOutputPanel ( ) ) ; }
+va	7	@ Override public String getDescription ( ) { return description + String . format ( " (*%s)" , extension ) ; }
+va	5	public void setEstudis ( String estudis ) { this . estudis = estudis ; }
+va	2	public boolean isEmpty ( ) { return this . first == null ; }
+va	9	@ Test public void FIGHTING_attacking_GRASS ( ) { assertEquals ( 1.0 , tc . getWeaknessResistance ( Type . FIGHTING , Type . GRASS ) , 0.0 ) ; }
+va	1	private SingletonOfConstantsS ( ) { }
+va	8	public synchronized void delete ( ) { if ( swigCPtr != 0 ) { if ( swigCMemOwn ) { swigCMemOwn = false ; otapiJNI . delete_Storable ( swigCPtr ) ; } swigCPtr = 0 ; } }
+va	8	public static void main ( String [ ] args ) { List < String > arrayList = new ArrayList < String > ( ) ; }
+va	9	void setField ( String className , String fieldName ) { this . className = className ; this . fieldName = fieldName ; }
+va	2	public double getRadius ( ) { if ( launched ) return 0 ; return 15 ; }
+va	4	public void run ( ) { m$ . Cmd . do ( methodName ) ; }
+va	5	public LayoutParameters ( int width , int height ) { this ( width , height , 0 ) ; }
+va	9	public Sphere ( float r ) { radius = r ; aabb . setHalfsize ( r , r , r ) ; }
+va	3	protected void disableAuthorizationHeader ( ) { requestHeaders . remove ( "Authorization" ) ; }
+va	8	@ Override public String toString ( ) { return "CommandDescriptor{" + "commandName='" + commandName + ' + "  commandId=" + commandId + "  commandParameters=" + commandParameters + } ; }
+va	10	void embarcar ( String [ ] passageiros ) { passageiros = new String [ ] { "Panthro" , "Lion" } ; passageiros [ 1 ] = "klaus" ; System . out . println ( passageiros [ 1 ] ) ; }
+va	5	@ JsonProperty ( "WaitingJobs" ) public void setWaitingJobs ( long WaitingJobs ) { this . WaitingJobs = WaitingJobs ; }
+va	4	public TimeStamp ( long t ) { this . t = t ; }
+va	7	public void reloadPresets ( ) { this . setModel ( new DefaultComboBoxModel ( AppManager . getInstance ( ) . getPresets ( ) . getFractalPresets ( ) ) ) ; }
+va	3	@ Override public boolean isProducing ( ) { return isProducing ; }
+va	9	@ Test public void FLYING_attacking_BUG ( ) { assertEquals ( 2.0 , tc . getWeaknessResistance ( Type . FLYING , Type . BUG ) , 0.0 ) ; }
+va	6	protected void check ( String method ) { if ( mAmShutdown ) throw new RuntimeException ( "NetBase." + method + " called when NetBase isn't in initialized state" ) ; }
+va	7	public void setExecuted ( java . util . Calendar executed ) { this . executed = executed ; }
+va	4	public void setCredits ( int credits ) { this . credits = credits ; }
+va	6	public ArrayList < Comanda > listarTodos ( ) { return ComandaController . obterInstancia ( ) . listarTodos ( ) ; }
+va	4	public void setCount ( int count ) { this . count = count ; }
+va	10	public Object unserialize ( String s ) throws IOException { return ( s == null || s . length ( ) == 0 ) ? null : new Integer ( s ) ; }
+va	2	protected static Container getPanel_1 ( ) { return null ; }
+te	2	public boolean isCloakable ( ) { return cloakable ; }
+te	3	public String toString ( ) { return "Expert Attack:\t" + getDescription ( ) ; }
+te	3	public String getJarFileName ( ) { return jarFileName ; }
+te	8	public static void main ( String [ ] args ) { System . out . println ( new Fibonacci_9 ( ) . getFibonacci ( 6 ) ) ; }
+te	1	public void run ( ) { }
+te	2	public boolean isInErrorState ( ) { return errorState ; }
+te	6	public IValue peek ( ) { if ( _stack . isEmpty ( ) ) { return null ; } return _stack . peek ( ) ; }
+te	2	@ Override public void playSound ( ) { }
+te	7	protected void fireChangeEvent ( ) { for ( ChangeListener l : getChangeListeners ( ) ) { l . stateChanged ( changeEvent ) ; } }
+te	2	public int portNumber ( ) { return this . portNumber ; }
+te	8	public static void test2 ( ) { { byte [ ] b = new byte [ 6 * 1024 * 1024 ] ; b = null ; } System . gc ( ) ; System . out . println ( "test2 fist explict gc over" ) ; }
+te	6	public TextBuilder withFont ( MapFont font ) { this . font = font ; return this ; }
+te	3	public String getPassword ( ) { return password ; }
+te	5	@ Override public Area getNextSibling ( ) { return ( Area ) getNextSiblingNode ( ) ; }
+te	6	public void setNomeTF ( String nomeTF ) { jTextField1 . setText ( nomeTF ) ; }
+te	9	public static void reloadDatabase ( ActionEvent evt ) { InitializationManager . addTask ( InitializationManager . LOAD_DATABASE , "     Loading Database" ) ; InitializationManager . processTasks ( ) ; }
+te	7	private Activity getCompassActivity ( ) { if ( compassFunctionalityVerfiedActivity == null ) { compassFunctionalityVerfiedActivity = new CompassFunctionalityVerfiedActivity ( clientFactory ) ; } return compassFunctionalityVerfiedActivity ; }
+te	8	@ Test public void testGetName ( ) { assertEquals ( "A" , g . getName ( ) ) ; assertEquals ( "B" , gg . getName ( ) ) ; }
+te	6	public long getTimeRunning ( class < ? extends Event > type ) { return this . timeRunning . get ( type ) ; }
+te	5	public void setShapeDrawer ( ShapeDrawer shapeDrawer ) { this . shapeDrawer = shapeDrawer ; }
+te	6	public boolean addGCMKey ( String key ) { return gcmKeys . add ( key ) ; }
+te	7	private MqttPublish createPublish ( MqttMessage message ) { return new MqttPublish ( this . getName ( ) , message ) ; }
+te	5	public void setName ( String name ) { this . name = name ; }
+te	6	HttpHeaders ( ) { head . before = head . after = head ; }
+te	5	public void setSexe ( String sexe ) { this . sexe = sexe ; }
+te	8	private void initializeOptions ( ) { foo = new InputOption ( "foo" , "f" ) ; | = new InputOption ( "bar" , "b" ) ; foo1 = new InputOption ( "fooBis" , "f" ) ; foo2 = new InputOption ( "foo" , "p" ) ; }
+te	8	private static JShape getShape ( SDOShape shape ) { return shape . getShapeType ( ) . getJShape ( shape ) ; }
+te	2	public boolean isDebug ( ) { return debug ; }
+te	4	@ Override public MyDatabase getMysql ( ) { return mysql ; }
+te	3	public AgentObserver getObserver ( ) { return this . observer ; }
+te	5	public THashMap < String , String > getSpecialEntities ( ) { return specialEntities ; }
+te	8	public NQuad next ( ) throws IOException { NQuad result = this . buffered ; this . preFetch ( ) ; return result ; }
+te	10	public BlockPosition ( int x , int y , int z ) { this . x = x ; this . y = y ; this . z = z ; }
+te	4	public void setNumItems ( final int numItems ) { this . numItems = numItems ; }
+te	9	@ Override public T visitSstinput ( @ NotNull SSTParser . SstinputContext ctx ) { return visitChildren ( ctx ) ; }
+te	3	public String toString ( ) { return "Fruit-" + ( id ) ; }
+te	6	@ Override public void invalidate ( ) { manaCrystal . removeCollector ( ( Collector ) unit ) ; }
+te	4	@ Override public void windowActivated ( WindowEvent e ) { return ; }
+te	8	public final void setHeight ( BoundSize size ) { this . height = size != null ? size : BoundSize . NULL_SIZE ; }
+te	7	public static void flipDirectionTo ( int x ) { if ( Proto . x > x ) setDirectionToLeft ( ) ; else setDirectionToRight ( ) ; }
+te	8	public void stop ( ) { started . set ( false ) ; shouldContinue = false ; thread . interrupt ( ) ; service . stop ( ) ; }
+te	2	protected final String fsp_name ( ) { return "CONDITION" ; }
+te	10	public static void addIntHeader ( HttpMessage message , String name , int value ) { message . addHeader ( name , value ) ; }
+te	9	public synchronized Environment addFullGlobalTree ( Object g ) { iterateDeep ( g , deepGlobalSetter ) ; return addGlobalInstance ( g ) ; }
+te	3	public Vector3f getAmbientColor ( ) { return ambientColor ; }
+te	5	private static void assertNotNull ( Object o ) { if ( o == null ) { throw new RuntimeException ( "expected no null value" ) ; } }
+te	5	public Builder age ( int value ) { age = value ; return this ; }
+te	1	private MyShape ( ) { }
+te	10	public void testConnectedClientCount ( ) { assert ( DLE . connectedClientCount ( ) == 0 ) ; DLE . addUser ( user ) ; DLE . addClientConnection ( "A" , "C" ) ; assert ( DLE . connectedClientCount ( ) == 1 ) ; }
+te	4	private static void markEndTime ( ) { endTime = System . currentTimeMillis ( ) ; }
+te	6	@ Override public String getServerHost ( ) { return ( ( AppleNotificationServer ) getServer ( ) ) . getNotificationServerHost ( ) ; }
+te	1	public void setMutables ( ) { }
+te	7	public boolean isDefined ( ) { return ( this . x1 != null && this . x2 != null && this . y1 != null && this . y2 != null && this . z1 != null && this . z2 != null ) ; }
+te	1	protected RSession ( ) { }
+te	9	private void haeButtonActionPerformed ( java . awt . event . ActionEvent evt ) { if ( otaTalteen ( ) ) { hae ( ) ; tyhjenna ( ) ; } }
+te	4	public String getBranch_id ( ) { retrieve ( ) ; return branch_id ; }
+te	10	@ Override public void process ( Turtle turtle , double [ ] values ) { returnValue = turtle . setTowards ( values [ 0 ] , values [ 1 ] ) ; }
+te	1	public static final int StateInit ( ) { return 0 ; }
+te	2	public boolean hasCommand ( ) { return hascmd ; }
+te	6	@ Test public void test3SortingTasks ( ) throws Exception { final int threads = 1 ; testImpl ( 1024 * 1024 * 3 , 1024 * 1024 * 1 * 4 , threads ) ; }
+te	1	public ASTNode ( ) { }
+te	2	@ Override public void resume ( ) { }
+te	10	public static void main ( String [ ] args ) { MongodbDAO mongodbDAO = new MongodbDAO ( ) ; mongodbDAO . printData ( ) ; mongodbDAO . documentsCounter ( ) ; }
+te	2	public int getMoney ( ) { return money ; }
+te	3	public TriggerTiming getWhen ( ) { return when ; }
+te	1	public BarData ( ) { }
+te	7	public void setAltitudeMode ( String value ) { this . altitudeMode = value ; this . isAltitudeModeDirty = true ; setDirty ( ) ; }
+te	4	public Wrapper ( ) { sum = Integer . MIN_VALUE ; }
+te	3	public boolean targetsAir ( ) { return targetsAir_native ( pointer ) ; }
+te	1	private EmailChannel ( ) { }
+te	5	public void setFuncoes ( Funcoes funcoes ) { this . funcoes = funcoes ; }
+te	1	public ProcedureCall ( ) { this ( null , null ) ; }
+te	9	@ Override public AttributeSet getAttributes ( ) { if ( refreshAttributes ) { attributes = createAttributes ( ) ; refreshAttributes = false ; refreshProperties = false ; } return attributes ; }
+te	10	public RecordArticleStatAllTimeModel save ( RecordArticleStatAllTimeModel model ) { if ( model . getId ( ) != null ) { return updateRecordArticleStatAllTime ( model ) ; } else { return addRecordArticleStatAllTimeModel ( model ) ; } }
+te	4	@ Override public Controller getController ( ) { return ctrl ; }
+te	4	public Object getNextPanelDescriptor ( ) { return LHC_Analysis_Panel4_Descriptor . IDENTIFIER ; }
+te	4	@ Override public void excuteCommand ( ) { barbecuer . BakeMutton ( ) ; }
+te	7	public void export ( File destFile ) { eventsHandler . getLog ( ) . export ( destFile ) ; }
+te	6	public void setHarmonic ( int i , int val ) { harmonicamps [ i ] = val ; }
+te	9	public int min_number_of_frames ( int streamsize ) { if ( h_vbr == true ) return h_vbr_frames ; else { if ( ( framesize + 5 - h_padding_bit ) == 0 ) return 0 ; else return ( streamsize / ( framesize + 5 - h_padding_bit ) ) ; } }
+te	2	public boolean isOrganic ( ) { return organic ; }
+te	8	public static String groupDigits ( long l , String grouper ) { return groupDigits ( l , ( byte ) 3 , grouper ) ; }
+te	6	@ Override public void handle ( EventHandler handler ) { handler . handle ( this ) ; }
+te	6	@ Override public String toString ( ) { return id + " - " + name + " - " + score ; }
+te	8	@ Transactional public Volunteer getVolunteer ( Integer volunteerId ) { return volunteerDAO . getVolunteer ( volunteerId ) ; }
+te	3	public String get_stop_code ( ) { return _stop_code ; }
+te	2	public boolean isVegetarian ( ) { return vegetarian ; }
+te	9	public SWIGTYPE_p_std__mapT_std__string_std__string_t getThe_map ( ) { long cPtr = otapiJNI . StringMap_the_map_get ( swigCPtr , this ) ; return ( cPtr == 0 ) ? null : new SWIGTYPE_p_std__mapT_std__string_std__string_t ( cPtr , false ) ; }
+te	4	public boolean isLeap ( ) { return ( ( year % 4 == 0 ) && ( year % 100 != 0 ) || ( year % 400 == 0 ) ) ; }
+te	7	public String rReadConsole ( Rengine arg0 , String arg1 , int arg2 ) { return null ; }
+te	4	public Decoder getFastInfosetDecoder ( ) { return ( Decoder ) getXMLReader ( ) ; }
+te	10	@ Override public InputStream getInputStream ( ) throws IOException { switch ( failValue ) { case 0 : return new InputStream ( ) { @ Override public int read ( ) throws IOException { return 1 ; } } ; case 1 : return null ; default : throw new IOException ( ) ; } }
+te	8	private void bitSizeButtonActionPerformed ( java . awt . event . ActionEvent evt ) { bitInputButton . setSelected ( false ) ; }
+te	7	private class < ? > findClass ( byte [ ] b ) throws ClassNotFoundException { return defineClass ( null , b , 0 , b . length ) ; }
+te	10	public static long factorial ( long n ) { long f = 1 ; for ( long i = 1 ; i <= n ; i ++ ) { f *= i ; } return f ; }
+te	2	public int getId ( ) { return id ; }
+te	1	public User ( ) { }
+te	8	public static StrategyCoward require ( Personality ps ) { return ( StrategyCoward ) ps . requireStrategy ( new StrategyCoward ( ) ) ; }
+te	2	public double getDomesticMig2010 ( ) { return domesticMig2010 ; }
+te	5	public AddMaterialCommand ( Material material ) { this . material = material ; }
+te	10	@ Override public int compareTo ( RequestEvent requestEvent ) { if ( this . time < requestEvent . time ) return - 1 ; else if ( this . time > requestEvent . time ) return 1 ; else return 0 ; }
+te	8	public Vector2f mul ( float r ) { return new Vector2f ( x * r , y * r ) ; }
+te	2	public int getPatas ( ) { return patas ; }
+te	8	public RobotProtocolTemplate ( InputStream input , OutputStream output ) { super ( new RobotRequestReader ( input ) , output ) ; }
+te	4	public void setActiveExtruder ( int ex ) { activeEx = ex ; }
+te	5	public InputStream getAsciiStream ( int columnIndex ) throws SQLException { throw new UnsupportedOperationException ( "Not supported yet." ) ; }
+te	1	public void unload ( ) { }
+te	6	@ Test public void valuesMatchKnownTripletForThirty ( ) throws Exception { assertThat ( calculate ( 30 ) , is ( new int [ ] { 5 , 12 , 13 } ) ) ; }
+te	7	public Waypoint ( double x , double y ) { this ( ) ; position = new Vec ( x , y ) ; }
+te	10	protected ApnsConnection initialValue ( ) { ApnsConnection newCopy = prototype . copy ( ) ; prototypes . add ( newCopy ) ; return newCopy ; }
+te	3	public Console getConsole ( ) { return console ; }
+te	7	public T get ( Identifier id ) { return data . get ( id ) ; }
+te	9	@ Override protected void connectionWithClientBroken ( INDIClient client ) { System . err . println ( "Connection with client " + client . getInetAddress ( ) + " has been broken." ) ; }
+te	3	public byte [ ] getTerminator ( ) { return terminators [ textEncoding ] ; }
+te	1	public void stop ( ) { }
+te	10	public void closeConnection ( ) throws IOException { listener . close ( ) ; instream . close ( ) ; outstream . close ( ) ; sock . close ( ) ; }
+te	5	public Vat ( Integer vatId ) { this . vatId = vatId ; }
+te	7	public void send ( ) { try { this . sendMsgs ( ) ; } catch ( Exception e ) { e . printStackTrace ( ) ; this . close ( ) ; } }
+te	9	public static float getFloat ( String s ) { return prefs . getFloat ( s , floatDefaults . get ( s ) ) ; }
+te	5	public void setDirname ( String dirname ) { this . dirname = dirname ; }
+te	2	public static boolean isCreateServer ( ) { return createServer ; }
+te	4	public void setMean ( double mean ) { this . mean = mean ; }
+te	9	@ Test ( expected = NullObjectInsertionException . class ) public void shouldRaiseExceptionForAddingNullCashOffice ( ) { Cinema cinema = new Cinema ( ) ; cinema . addCashOffice ( null ) ; }
+te	1	public void destroy ( ) { }
+te	4	public final void println ( boolean x ) { println ( "" + x ) ; }
+te	4	public void setTotal ( int total ) { this . total = total ; }
+te	10	public static void swap ( int a , int b ) { int t ; t = a ; a = b ; b = t ; }
+te	8	public void setHealth ( int health ) { if ( health <= getMaxHealth ( ) ) this . health = health ; else this . health = getMaxHealth ( ) ; }
+te	7	public Image createImage ( ImageProducer arg0 ) { return render . createImage ( arg0 ) ; }
+te	1	public void tick ( ) { }
+te	10	public boolean contains ( Object element ) { int my_element = ( Integer ) element ; if ( Arrays . binarySearch ( tablica , my_element ) < 0 ) return false ; return true ; }
+te	10	@ Override public void setStationToPlayer ( Player player , String station ) { stationList . put ( player , station ) ; }
+te	9	public void addNewItem ( ) throws Exception { T item = this . clazz . newInstance ( ) ; this . items . add ( item ) ; }
+te	6	private void txtRutActionPerformed ( java . awt . event . ActionEvent evt ) { }
+te	4	@ Inject public Example ( String helloworld ) { }
+te	10	public void store ( List < StrawEventHandler > handlers ) { if ( handlers == null ) { return ; } for ( StrawEventHandler handler : handlers ) { this . store ( handler ) ; } }
+te	7	public void apply ( Mob mob ) { def . apply ( mob , caster ) ; }
+te	9	public PassageImpl ( String docId , String content ) { this . docId = docId ; this . content = content ; }
+te	1	public boolean isEmpty ( ) { return true ; }
+te	5	public void setPortNumber ( int portNumber ) { this . portNumber = portNumber ; this . initializeSocket ( ) ; }
+te	1	public boolean reversible ( ) { return false ; }
+te	7	public static boolean isValidPropertyState ( String state ) { try { parsePropertyState ( state ) ; } catch ( IllegalArgumentException e ) { return false ; } return true ; }
+te	9	public static String getUserMessage ( int statusCode ) { if ( statusCode == Response . SC_SERVICE_UNAVAILABLE ) { return "Pearltrees is currently unavailable. Please retry later." ; } if ( statusCode == Response . SC_SEE_OTHER ) { return "Please enable cookies to use the bookmarklet." ; } return "Pearltrees is currently unreachable. Please check your internet connection or retry later." ; }
+te	3	public GameVector PlusX ( ) { ++ this . xIndex ; return this ; }
+te	2	public void setInactive ( ) { active = false ; }
+te	1	public AlphaLabel ( ) { super ( ) ; }
+te	5	public GrainBillTM ( ) { myData = new ArrayList < FermentableAdditionType . Addition > ( ) ; }
+te	6	public void setSide ( AList < Song > s ) { this . songs = s ; }
+te	3	public String getDescription ( ) { return description ; }
+te	9	public void set_transfer_type ( String in ) { try { _transfer_type = Integer . parseInt ( in ) ; } catch ( NumberFormatException e ) { ; } }
+te	6	@ Test public void testMovelNl2 ( ) { write ( "hello\nmister\njohn doe" ) ; cursor . movel ( "\nmister\njohn doe" , 0 ) ; assertPosition ( "-:l1:c5" ) ; }
+te	4	public PlayerDifficulty getPlayerDifficulty ( ) { return this . gameState . playerDifficulty ; }
+te	6	@ Override protected void validateTree ( ) { if ( ! view . isProcessing ( name ) ) super . validateTree ( ) ; }
+te	6	public RowMapperClobFieldConfigBuilder field ( Field field ) { this . field = field ; return this ; }
+te	8	public void actionPerformed ( ActionEvent ae ) { log . config ( "Displaying COM port configuration window" ) ; COMPortConfig cpcWin = new COMPortConfig ( ) ; }
+te	7	public static int getStats ( ) { if ( found == 0 || all == 0 ) return 0 ; int stats = ( int ) ( ( 100 * found ) / all ) ; return stats ; }
+te	8	private boolean test ( String text ) { try { Integer . parseInt ( text ) ; return true ; } catch ( NumberFormatException e ) { return false ; } }
+te	5	private FingerprintType ( final String strName ) { m_strName = strName ; }
+te	1	public XmlQuery ( ) { }
+te	6	public void addPropertyChangeListener ( PropertyChangeListener pcl ) { pcs . addPropertyChangeListener ( pcl ) ; }
+te	9	@ Override public void nextFrame ( ) { if ( images . size ( ) <= 1 || ! playing ) { return ; } frame ++ ; frame %= images . size ( ) ; }
+te	3	public String getName ( ) { return name ; }
+te	9	public void put ( String key , String value ) { this . _fields . put ( key , value ) ; }
+te	7	public void addLast ( Object o ) { addAfter ( o , header . previous ) ; }
+te	2	public String toString ( ) { return "Case coloree" ; }
+te	9	@ Override public InetSocketAddress getLocalSocketAddress ( WebSocket conn ) { if ( socket != null ) return ( InetSocketAddress ) socket . getLocalSocketAddress ( ) ; return null ; }
+te	10	@ Override public void mouseReleased ( MouseEvent e ) { try { onMouseReleased ( e ) ; } catch ( Throwable t ) { throwableGenerated ( "onMouseReleased" , t ) ; } }
+te	6	public void setUserId ( java . lang . long userId ) { this . userId = userId ; }
+te	1	public void initNewLife ( ) { }
+te	5	public void setPreviousCell ( Cell previousCell ) { this . previousCell = previousCell ; }
+te	9	public static void main ( String [ ] args ) throws ClassNotFoundException , IOException , SQLException { BaseDeDonnees bd = new BaseDeDonnees ( ) ; }
+te	2	public boolean getDefaultShared ( ) { return defaultShared ; }
+te	3	public static void main ( String [ ] args ) { }
+te	10	public String getPwmAString ( ) { return new String ( String . format ( "%d%c" , pwmA . getData ( ) , DecimalFormatSymbols . getInstance ( ) . getPercent ( ) ) ) ; }
+te	4	public List < StateKeyboard > getStatesKeyboard ( ) { return statesKeyboards ; }
+te	8	public void adjustBrightness ( BufferedWrapper bw , int adjustQuantity ) { Brightness . AdjustBrightness ( bw , adjustQuantity ) ; }
+te	4	public final void startup ( ) { if ( ! running ) { running = true ; doStartup ( ) ; } }
+te	5	public void run ( ) { if ( program != null ) { program . execute ( this ) ; } else { defaultProgram ( ) ; } }
+te	8	public static int [ ] getRoutes ( int busStop ) { if ( busStop == 0 ) throw new InvalidQueryException ( "Nonexistent bus stop" ) ; return database . busDatabase . select_ids ( "route" , "path" , "bus_stop" , busStop , "" ) ; }
+te	5	public synchronized List getList ( ) { return ( List ) completedThreads . clone ( ) ; }
+te	7	public final void setDebugMode ( boolean debug ) { if ( debug != this . debug ) { this . debug = debug ; doSetDebugMode ( ) ; } }
+te	8	public static boolean isText ( int c ) { if ( isEnd ( c ) || isBreak ( c ) || isSpecial ( c ) ) return false ; return true ; }
+te	10	protected void doGet ( HttpServletRequest request , HttpServletResponse response ) throws ServletException , IOException { doPost ( request , response ) ; }
+te	10	public Flac2PcmAudioInputStream ( InputStream in , AudioFormat format , long length ) { this ( in , format , length , DEFAULT_BUFFER_SIZE ) ; }
+te	3	public String getDescription ( ) { return description ; }
+te	3	public MarkovState [ ] getMarkovStates ( ) { return STATES ; }
+te	1	public void setMutables ( ) { }
+te	3	@ Override public void imprimirFormaDePago ( ) { this . imprimirDatos ( ) ; }
+te	5	@ JsonProperty ( "PreLRMSWaitingJobs" ) public void setPreLRMSWaitingJobs ( long PreLRMSWaitingJobs ) { this . PreLRMSWaitingJobs = PreLRMSWaitingJobs ; }
+te	7	public MultiByteInteger ( long value , int length ) { this . value = value ; this . length = length ; }
+te	2	public int getTasksSize ( ) { return tasksSize ; }
+te	3	public String getL3DiscntAmt ( ) { return l3DiscntAmt ; }
+te	3	public Date getDTransactionDate ( ) { return dTransactionDate ; }
+te	4	public ContentStoreException ( String s ) { super ( s ) ; }
+te	7	public ModificationException ( final class < ? > classTriedToChange , final String fieldTryingToChange ) { super ( createMessage ( classTriedToChange , fieldTryingToChange , null , null ) ) ; }
+te	9	public Atribuicao ( String id , Expressao exp ) { this . id = id ; this . exp = exp ; }
+te	5	public void doWork ( ) { System . out . println ( "and now  working hard" ) ; doMessage ( ) ; }
+te	10	public void removeFileFromSharedFiles ( String hash ) { logger . info ( "Remove file with hash '" + hash + "' from " + this . toString ( ) ) ; shares . remove ( hash ) ; }
+te	2	public boolean isfCommunity ( ) { return fCommunity ; }
+te	9	public ThreadedHandlerFactory ( IHandlerFactory factory , IExecutorService executor ) { handlerFactory = factory ; service = executor ; }

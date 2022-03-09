@@ -1,0 +1,100 @@
+tr	3	public String getFieldName ( ) { return _fieldName ; }
+tr	7	@ Override public int getColumnAmount ( ) { if ( this . optionTextFields [ 1 ] . getText ( ) . equals ( "" ) ) return 0 ; return Integer . parseInt ( this . optionTextFields [ 1 ] . getText ( ) ) ; }
+tr	7	public InternManImpl ( UserStore userStore ) { this . users = new UserManagementImpl ( ) ; this . adverts = new AdvertManagementImpl ( ) ; }
+tr	7	@ Override public void setText ( String Text ) { this . SetText ( Text , Color . white ) ; }
+tr	5	private boolean isPreconditionsFilled ( Path absFilePath ) { if ( ! canWriteSelectedFile ( absFilePath ) ) { return false ; } if ( ! canWriteWithDefaultOriginalClassConstructor ( ) ) { return false ; } return true ; }
+tr	7	@ Override public String toString ( ) { String dato = this . codigo + "-" + cliente + "-" + saldo + " lps en saldo." ; return dato ; }
+tr	3	public static ServiceFactory getInstance ( ) { if ( instance == null ) instance = new ServiceFactory ( ) ; return instance ; }
+tr	4	@ Override public PLType getType ( ) { return PLType . PLNull ; }
+tr	9	protected boolean attack ( Interactable target ) { if ( target != null && ! ( target instanceof CardinalDirection ) ) { System . out . println ( "You swing your " + this . name + " at the " + target . name + "." ) ; if ( ! target . damage ( this ) ) { System . out . println ( "Your attack bounces off and does nothing." ) ; } return true ; } else { System . out . println ( "You swing your " + this . name + " wildy around." ) ; return true ; } }
+tr	2	private void finaliza ( ) { this . dispose ( ) ; }
+tr	9	@ Override protected boolean isConsumed ( KeyboardEvent e ) { boolean rc = false ; if ( e . getKey ( ) == Keyboard . KEY_UP || e . getKey ( ) == Keyboard . KEY_DOWN ) { rc = true ; } return rc ; }
+tr	3	public void delete ( ) { Dispatch . call ( this , "Delete" ) ; }
+tr	2	public long getTimeToWait ( ) { return this . timeToWait ; }
+tr	4	@ Override public MessageType getMessageType ( ) { return MessageType . EXITCHATROOM ; }
+tr	8	int BitTreeDecode ( int [ ] paramArrayOfInt , int paramInt1 , int paramInt2 ) throws IOException { int i = 1 ; for ( int j = paramInt2 ; j > 0 ; j -- ) { i = i + i + BitDecode ( paramArrayOfInt , paramInt1 + i ) ; } return i - ( 1 << paramInt2 ) ; }
+tr	2	public boolean isSituacao ( ) { return situacao ; }
+tr	10	protected BombImage ( Content parent , Game game , Point position , int range , Date end ) { super ( parent , game , position , range , end ) ; }
+tr	6	public Object accept ( ASTVisitor visitor ) throws DatabaseException { return visitor . visit ( this ) ; }
+tr	6	@ Override public void deleteExam ( Exam exam ) { examDAO . delete ( exam ) ; }
+tr	6	public double getUnnormalisedInterpolatedHeightAt ( Vec pp ) { return getInterpolatedHeightAt ( pp ) * range + min ; }
+tr	8	@ XmlElementDecl ( namespace = "http://www.akamon.com/slots/gameconfigdata.xsd" , name = "GameConfigData" ) public JAXBElement < GameConfigData > createGameConfigData ( GameConfigData value ) { return new JAXBElement < GameConfigData > ( _GameConfigData_QNAME , GameConfigData . class , null , value ) ; }
+tr	9	public Integer getIntData ( Document doc , String tagName ) { String data = getTextData ( doc , tagName ) ; if ( data == null ) { return null ; } else { return Integer . parseInt ( data ) ; } }
+tr	5	public List < MessageVO > getMessageVOs ( ) { if ( messageVOs == null ) { messageVOs = new ArrayList < MessageVO > ( ) ; } return this . messageVOs ; }
+tr	9	public static void pairsAndValues ( ) { int [ ] arr = { 1 , 2 , 3 } ; for ( int i = 0 ; i < arr . length ; i ++ ) for ( int j = 0 ; j < arr . length ; j ++ ) { System . out . print ( "Value : " + ( arr [ i ] + arr [ j ] ) ) ; System . out . println ( "  Pair : " + arr [ i ] + " and " + arr [ j ] ) ; } }
+tr	4	public Holder ( ) { System . out . println ( "Holder created" ) ; }
+tr	1	public ShareItem ( ) { }
+tr	1	protected void start ( ) { start ( null ) ; }
+tr	5	public void addPOS ( POS pos ) { posArray . add ( pos ) ; }
+tr	6	@ Override public TileEntity getTileEntity ( Tile parent ) { return new TileDoorEntity ( parent ) ; }
+tr	4	public OlogClientBuilder withExecutor ( ExecutorService executor ) { this . executor = executor ; return this ; }
+tr	8	@ XmlElementDecl ( namespace = "" , name = "xRequest" ) public JAXBElement < BigInteger > createXRequest ( BigInteger value ) { return new JAXBElement < BigInteger > ( _XRequest_QNAME , BigInteger . class , null , value ) ; }
+tr	10	private static int maxNode3 ( BSTNode root , int maxSoFar ) throws InvalidBSTException { if ( root == null ) return maxSoFar ; if ( maxNode3 ( root . getLeft ( ) , maxSoFar ) > ( ( Integer ) root . getData ( ) ) ) { throw new InvalidBSTException ( ) ; } maxSoFar = ( ( Integer ) root . getData ( ) ) . intValue ( ) ; return maxNode3 ( root . getRight ( ) , maxSoFar ) ; }
+tr	7	public UnitOfWork with ( Object [ ] contextObjectArray ) { this . ctx = new business . Context ( contextObjectArray ) ; return this ; }
+tr	3	public String getFirstName ( ) { return firstName ; }
+tr	5	private char peekNextChar ( ) { if ( pos < ( input . length ( ) - 1 ) ) { return input . charAt ( pos + 1 ) ; } else { return 0 ; } }
+tr	6	public String toString ( ) { String out = "" ; for ( int k = 1 ; k <= size ; k ++ ) out += heap [ k ] + " " ; return out ; }
+tr	8	private void effacer ( java . awt . event . ActionEvent evt ) { nomEtu . setText ( "" ) ; }
+tr	6	public boolean isNull ( String key ) { return JSONObject . null . equals ( this . opt ( key ) ) ; }
+tr	2	public String getTestingModeAnswer ( ) { return "Test Answer" ; }
+tr	1	public int process_id ( ) { return 2 ; }
+tr	1	public Prenotazione ( ) { super ( ) ; }
+tr	9	public void start ( ) { this . setPlayingOrder ( player1 , player2 ) ; this . board . clearTheBoard ( ) ; this . setStatus ( Game . NEW_GAME ) ; }
+tr	3	public void isiOperan2 ( double x ) { op2 = x ; }
+tr	5	public java . awt . Frame getFrame ( ) { return parent ; }
+tr	10	public static void quadRectOutset ( Rect rect , double border , RGB fill , boolean inset ) { quadCoordOutset ( rect . getMin ( ) , rect . getMax ( ) , border , fill , inset ) ; }
+tr	7	@ Override public boolean equals ( Object obj ) { if ( this == obj ) return true ; if ( obj == null ) return false ; if ( obj instanceof DescribeComponentsResult == false ) return false ; DescribeComponentsResult other = ( DescribeComponentsResult ) obj ; if ( other . getComponentInfos ( ) == null ^ this . getComponentInfos ( ) == null ) return false ; if ( other . getComponentInfos ( ) != null && other . getComponentInfos ( ) . equals ( this . getComponentInfos ( ) ) == false ) return false ; return true ; }
+tr	8	public boolean addMeter ( Meter meter ) { int meterID = meter . getMeterID ( ) ; if ( meters . containsKey ( meterID ) ) { return false ; } else meters . put ( meterID , meter ) ; return true ; }
+tr	9	public void load ( Runnable runnable ) { while ( true ) { try { executor . execute ( runnable ) ; break ; } catch ( RejectedExecutionException e ) { Macro . sleep ( 500 ) ; } } }
+tr	2	public Tela_Usuario_Cadastro ( ) { initComponents ( ) ; }
+tr	10	void processSecurityMsg ( ) { vlog . debug ( "processing security message" ) ; int rc = security . processMsg ( this ) ; if ( rc == 0 ) throwAuthFailureException ( ) ; if ( rc == 1 ) { state_ = RFBSTATE_SECURITY_RESULT ; processSecurityResultMsg ( ) ; } }
+tr	1	public int [ ] getWarps ( ) { return new int [ ] { 0 , 0 , 0 , 0 } ; }
+tr	4	@ Override public String getSchema ( ) throws SQLException { return null ; }
+tr	5	public InvalidParameterException ( final String message , final Throwable exception ) { super ( message , exception ) ; }
+tr	1	public boolean blocksLineOfSight ( ) { return false ; }
+tr	4	public List < Campaign > getCamlist ( ) { return camlist ; }
+tr	3	public String getSendTime ( ) { return sendTime ; }
+tr	10	@ Override public Collection < Cursor < C >> getCursors ( ) { return Collections . unmodifiableCollection ( Arrays . asList ( _cursors ) ) ; }
+tr	2	public void setYear ( int year ) { this . year = year ; }
+tr	8	@ Override public Object visit ( ASTVisitor v , Object arg ) throws Exception { return v . visitBinaryExpr ( this , arg ) ; }
+tr	10	private void endExpression ( ) { String s = textHandler . end ( ) ; if ( s . length ( ) > 0 ) { container . add ( new Expression ( s , pass2 ) ) ; } }
+va	7	public AddOrigen ( java . awt . Frame parent , boolean modal ) { super ( parent , modal ) ; initComponents ( ) ; }
+va	6	public static final byte product ( byte u , byte v ) { if ( u == 0 || v == 0 ) return 0 ; if ( u == 1 ) return v ; if ( v == 1 ) return u ; else { byte product = getExp ( UNSIGN ( getLog ( u - 1 ) ) + UNSIGN ( getLog ( v - 1 ) ) ) ; return product ; } }
+va	8	public int delete ( int id ) { String SQL1 = "DELETE FROM sig_reserves where id=" + id ; int nup = client . getMysql ( ) . executeUpdate ( SQL1 ) ; return nup ; }
+va	4	public static String getPassword ( String password ) { return getProperty ( "weibo4j.password" , password ) ; }
+va	3	public Parler ( String message ) { this ( 0 , message ) ; }
+va	9	public final void set ( double xl , double yl , double xh , double yh ) { boundaryLowX = xl ; boundaryLowY = yl ; boundaryHiX = xh ; boundaryHiY = yh ; }
+va	10	public Sprite ( BufferedImage image , int frameHeight , int numberOfTiles , int frameDurations [ ] ) { animation = new Animation ( ) ; SpriteLoader . parseSprite ( image , frameHeight , numberOfTiles , frameDurations , animation ) ; }
+va	2	public short [ ] [ ] action_table ( ) { return _action_table ; }
+va	3	public TitleImp ( ) { this . line = new LineImp ( this ) ; }
+va	10	public void obtainReservations ( ) { BigDecimal [ ] reservations = { BigDecimal . valueOf ( long . valueOf ( "1" ) ) , BigDecimal . valueOf ( long . valueOf ( "2" ) ) } ; System . out . println ( "Invoking Managed Tasks" ) ; ejbFacade . getReservations ( reservations ) ; setReservationListMessage ( "The reservation report has been initated" ) ; }
+va	5	@ Override protected void selectNumber ( ) { System . out . println ( "\u9009\u4E00\u4E2A\u4E2D\u56FD\u8054\u901A\u7535\u8BDD\u53F7" ) ; }
+va	2	public void setRing ( boolean ring ) { this . ring = ring ; }
+va	6	public boolean RemoveContact ( long nIndexContact ) { return otapiJNI . AddressBook_RemoveContact ( swigCPtr , this , removeRefContact ( nIndexContact ) ) ; }
+va	5	public static void notNull ( Object object , RuntimeException throwIfAssertFail ) { if ( object == null ) { throw throwIfAssertFail ; } }
+va	1	public boolean isFinished ( ) { return isFinished ; }
+va	9	public static String substring ( String origin , String begin , String end ) { if ( origin == null ) { return origin ; } int beginIndex = begin == null ? 0 : origin . indexOf ( begin ) + begin . length ( ) ; int endIndex = end == null ? origin . length ( ) : origin . indexOf ( end , beginIndex ) ; if ( endIndex == - 1 ) { return origin . substring ( beginIndex ) ; } return origin . substring ( beginIndex , endIndex ) ; }
+va	1	public Position ( ) { }
+va	7	@ Override public boolean equals ( Object obj ) { if ( obj instanceof GRGProteinNode ) { GRGProteinNode other = ( GRGProteinNode ) obj ; return this . node . equals ( other . node ) ; } else { return false ; } }
+va	4	public List < Calificacion > getCalificaciones ( ) { return calificaciones ; }
+va	8	public void add_production ( production prod ) throws internal_error { if ( prod == null || prod . lhs ( ) == null || prod . lhs ( ) . the_symbol ( ) != this ) throw new internal_error ( "Attempt to add invalid production to non terminal production table" ) ; _productions . put ( prod , prod ) ; }
+te	5	public void paintComponent ( Graphics g2 ) { g2 . drawImage ( bgImage , 0 , 0 , null ) ; }
+te	9	public void print ( String str , int style ) { synchronized ( outputLock ) { insert ( str , base , style ) ; base += str . length ( ) ; setCaretPosition ( base ) ; } }
+te	7	public Response delete ( String url , boolean authenticated ) throws WeiboException { return httpRequest ( url , null , authenticated , "DELETE" ) ; }
+te	4	@ Override public synchronized void removeNotify ( ) { this . applet . shutdown ( ) ; super . removeNotify ( ) ; }
+te	9	private int validateProtocol ( ) throws IOException { int resp = this . sendDummyRequest ( ) ; if ( ! this . sc . isSecureConnection ( ) ) { this . sc . setSecureConnection ( true ) ; try { resp = this . sendDummyRequest ( ) ; } catch ( SSLException e ) { this . sc . setSecureConnection ( false ) ; } } return resp ; }
+te	6	public Vector3D add ( Vector3D otherVector ) { return new Vector3D ( this . getX ( ) + otherVector . getX ( ) , this . getY ( ) + otherVector . getY ( ) , this . getZ ( ) + otherVector . getZ ( ) ) ; }
+te	1	public EvaluationUtilityTest ( ) { }
+te	5	public char next ( char c ) throws JSONException { char n = next ( ) ; if ( n != c ) { throw syntaxError ( "Expected '" + c + "' and instead saw '" + n + "'" ) ; } return n ; }
+te	2	public char nextChar ( ) { return ( char ) ( next ( 16 ) ) ; }
+te	3	public void setTopicsService ( TopicsService topicsService ) { this . topicsService = topicsService ; }
+te	4	@ Override public void close ( ) throws IOException { in . close ( ) ; }
+te	6	public Client ( String dni , String nom , String cognoms , String email ) { this . dni = dni ; this . nom = nom ; this . cognoms = cognoms ; this . email = email ; }
+te	1	public int amount ( ) { return this . amount ; }
+te	3	public static BasicRelation getEquivalenceRelation ( ) { BasicRelation rel = new BasicRelation ( "=" ) ; return rel ; }
+te	10	public void draw ( ) { while ( ! ( glapi . isCloseRequest ( ) || Keyboard . isKeyDown ( Keyboard . KEY_Q ) ) ) { glapi . defaultMovements ( ) ; glapi . glLoopBegin ( ) ; glapi . glLoopEnd ( ) ; } glapi . destroyDisplay ( ) ; }
+te	2	public boolean isInterested ( ) { return this . interested ; }
+te	8	public void setRowCount ( int count ) { this . tableModel . setRowCount ( count ) ; rowColors . clear ( ) ; for ( int i = 0 ; i < count ; i ++ ) { rowColors . add ( getTableForeground ( ) ) ; } }
+te	10	public static void onAllROute ( Individual individual ) { ProblemInstance problemInstance = individual . problemInstance ; for ( int period = 0 ; period < problemInstance . periodCount ; period ++ ) { for ( int vehicle = 0 ; vehicle < problemInstance . vehicleCount ; vehicle ++ ) { mutateRouteBy2_Opt ( individual , period , vehicle ) ; } } }
+te	8	public static ByteBuffer stringToBuffer ( int id ) { String s = Integer . valueOf ( id ) . toString ( ) ; return stringToBuffer ( s ) ; }
+te	7	@ Test public void revers_on_empty_list_should_be_equals_to_itself ( ) { DoubleLinkedList list = new DoubleLinkedList ( ) ; assertEquals ( utils . reverse ( list ) , list ) ; }
