@@ -157,8 +157,8 @@ if __name__ == '__main__':
                          #"CodeBERT":      "microsoft/codebert-base",
                          #"CodeBERTa":     "huggingface/CodeBERTa-small-v1", 
                          #"GraphCodeBERT": "microsoft/graphcodebert-base",
-                         "CodeT5":        "Salesforce/codet5-base",
-                         "JavaBERT-mini": "anjandash/JavaBERT-mini",
+                         #"CodeT5":        "Salesforce/codet5-base",
+                         #"JavaBERT-mini": "anjandash/JavaBERT-mini",
                          "PLBART-mtjava": "uclanlp/plbart-multi_task-java",
                          "PLBART-large":  "uclanlp/plbart-large",
                          }
@@ -167,8 +167,8 @@ if __name__ == '__main__':
                             #"CodeBERT":      256, 
                             #"CodeBERTa":     512,
                             #"GraphCodeBERT": 512,
-                            "CodeT5":         512,
-                            "JavaBERT-mini":  512,
+                            #"CodeT5":         512,
+                            #"JavaBERT-mini":  512,
                             "PLBART-mtjava":  1024,
                             "PLBART-large":   1024,                            
                             }
