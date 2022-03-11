@@ -162,9 +162,15 @@ if __name__ == "__main__":
     model_kinds   = {'BERT':         13, 
                     'CodeBERT':      13,
                     'CodeBERTa':      7,
-                    'GraphCodeBERT': 13,}
+                    'GraphCodeBERT': 13,
 
-    label_counts  = ['1k']
+                    'CodeT5':        13,
+                    'JavaBERT-mini': 13,
+                    "PLBART-mtjava":  7,
+                    "PLBART-large":  13,                       
+                    }
+
+    label_counts  = ['100', '1k', '10k']
     task_codes    = ['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
     nhids         = [0] # number of hidden layers
 

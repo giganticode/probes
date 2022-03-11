@@ -8,7 +8,9 @@ import collections
 from tqdm import tqdm
 from pathlib import Path
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoConfig
 from transformers import BertTokenizer, BertModel, BertConfig
+from transformers import BartTokenizer, BartForSequenceClassification, BartConfig
 from transformers import RobertaTokenizer, RobertaForSequenceClassification, RobertaConfig
 
 class InputExample(object):
@@ -108,7 +110,9 @@ def save_features(model, tokenizer, device):
                 input_mask  = input_mask.to(device)   # batch_sized input_mask tensor
                 all_outputs = model(input_ids, token_type_ids=None, attention_mask=input_mask)
                 enc_layers  = all_outputs.hidden_states
-                #print(model_checkpoint, " => Num layers:", len(enc_layers))
+                print("***************************************************")
+                print(model_checkpoint, " => Num layers:", len(enc_layers))
+                print("***************************************************")
 
                 for iter_index, example_index in enumerate(example_indices):
                     # for every feature in batch => tokens, input_ids, input_mask => features[example_index.item()]
@@ -147,24 +151,34 @@ if __name__ == '__main__':
 
     task_codes    = ['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
     shuffle_kinds = ['ORIG']
-    label_counts  = ['1k']
+    label_counts  = ['100', '1k', '10k']
 
-    model_checkpoints = {"BERT":          "bert-base-uncased", 
-                         "CodeBERT":      "microsoft/codebert-base",
-                         "CodeBERTa":     "huggingface/CodeBERTa-small-v1", 
-                         "GraphCodeBERT": "microsoft/graphcodebert-base",}
+    model_checkpoints = {#"BERT":          "bert-base-uncased", 
+                         #"CodeBERT":      "microsoft/codebert-base",
+                         #"CodeBERTa":     "huggingface/CodeBERTa-small-v1", 
+                         #"GraphCodeBERT": "microsoft/graphcodebert-base",
+                         "CodeT5":        "Salesforce/codet5-base",
+                         "JavaBERT-mini": "anjandash/JavaBERT-mini",
+                         "PLBART-mtjava": "uclanlp/plbart-multi_task-java",
+                         "PLBART-large":  "uclanlp/plbart-large",
+                         }
 
-    model_max_seq_lengths = {"BERT":         512,
-                            "CodeBERT":      256, 
-                            "CodeBERTa":     512,
-                            "GraphCodeBERT": 512,}
+    model_max_seq_lengths = {#"BERT":         512,
+                            #"CodeBERT":      256, 
+                            #"CodeBERTa":     512,
+                            #"GraphCodeBERT": 512,
+                            "CodeT5":         512,
+                            "JavaBERT-mini":  512,
+                            "PLBART-mtjava":  1024,
+                            "PLBART-large":   1024,                            
+                            }
 
 
     for task_code in task_codes:
         for shuffle_kind in shuffle_kinds:
             for model_checkpoint in list(model_checkpoints.keys()):
-                print(f"Processing for task >> {task_code} >> {shuffle_kind}:{model_checkpoint} for 100,1k,10k")
                 for label_count in label_counts:
+                    print(f"Processing for task >> {task_code} >> {shuffle_kind}:{model_checkpoint} for {label_count}")
 
                     text_dataset  = sys.path[0] + '/data/datasets_'+ task_code +'/'+ task_code +'_'+ shuffle_kind +'_'+ label_count +'.txt'
                     json_features = sys.path[0] + '/data/datasets_'+ task_code +'/'+ shuffle_kind +'/'+ model_checkpoint +'_features_'+ label_count +'.json'
@@ -187,11 +201,23 @@ if __name__ == '__main__':
                         tokenizer = BertTokenizer.from_pretrained(modelname, do_lower_case=True, cache_dir="/tmp")
                         model     = BertModel.from_pretrained(modelname, config=config, cache_dir="/tmp")
 
-                    else:
-
+                    elif model_checkpoint in ["CodeBERT", "CodeBERTa", "GraphCodeBERT", "CodeT5"]:
+                        
                         config    = RobertaConfig.from_pretrained(modelname, output_hidden_states=True)
                         tokenizer = RobertaTokenizer.from_pretrained(modelname, cache_dir="/tmp")
                         model     = RobertaForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="/tmp")
+
+                    elif model_checkpoint in ["PLBART-mtjava", "PLBART-large"]:
+
+                        config    = BartConfig.from_pretrained(modelname, output_hidden_states=True)
+                        tokenizer = BartTokenizer.from_pretrained("facebook/bart-base", cache_dir="/tmp")
+                        model     = BartForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="/tmp") 
+
+                    elif model_checkpoint in ["JavaBERT-mini"]:
+
+                        config    = AutoConfig.from_pretrained(modelname, output_hidden_states=True)
+                        tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="/tmp")
+                        model     = AutoModelForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="/tmp")                        
 
                     model.to(device)
                     model.eval()
