@@ -110,9 +110,9 @@ def save_features(model, tokenizer, device):
                 input_mask  = input_mask.to(device)   # batch_sized input_mask tensor
                 all_outputs = model(input_ids, token_type_ids=None, attention_mask=input_mask)
                 enc_layers  = all_outputs.hidden_states
-                print("***************************************************")
-                print(model_checkpoint, " => Num layers:", len(enc_layers))
-                print("***************************************************")
+                #print("***************************************************")
+                #print(model_checkpoint, " => Num layers:", len(enc_layers))
+                #print("***************************************************")
 
                 for iter_index, example_index in enumerate(example_indices):
                     # for every feature in batch => tokens, input_ids, input_mask => features[example_index.item()]
