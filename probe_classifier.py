@@ -159,10 +159,11 @@ def classify_and_predict(train_X, train_y, dev_X, dev_y, test_X, test_y, feat_di
 if __name__ == "__main__":
 
     shuffle_kinds = ['ORIG']
-    model_kinds   = {'BERT':         13, 
-                    'CodeBERT':      13,
-                    'CodeBERTa':      7,
-                    'GraphCodeBERT': 13,
+    model_kinds   = {
+                    #'BERT':         13, 
+                    #'CodeBERT':      13,
+                    #'CodeBERTa':      7,
+                    #'GraphCodeBERT': 13,
 
                     'CodeT5':        13,
                     'JavaBERT-mini': 13,
