@@ -10,7 +10,7 @@ from pathlib import Path
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoConfig
 from transformers import BertTokenizer, BertModel, BertConfig
-from transformers import BartTokenizer, BartModel, BartForSequenceClassification, BartConfig
+from transformers import BartTokenizer, BartModel, BartForSequenceClassification, BartForConditionalGeneration, BartConfig
 from transformers import RobertaTokenizer, RobertaForSequenceClassification, RobertaConfig
 
 class InputExample(object):
@@ -211,7 +211,7 @@ if __name__ == '__main__':
 
                         config    = BartConfig.from_pretrained(modelname, output_hidden_states=True)
                         tokenizer = BartTokenizer.from_pretrained("facebook/bart-base", cache_dir="/tmp")
-                        model     = BartForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="/tmp") 
+                        model     = BartForConditionalGeneration.from_pretrained(modelname, config=config, cache_dir="/tmp") 
 
                     elif model_checkpoint in ["JavaBERT-mini"]:
 
