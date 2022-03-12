@@ -5559,7 +5559,7 @@ tr	KPC	import
 tr	IDV	lPane
 tr	KIM	static
 tr	KIM	class
-tr	LIT	"\">"
+tr	LIT	"\>"
 tr	KFC	if
 tr	KFC	return
 tr	KPT	double
