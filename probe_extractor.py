@@ -108,7 +108,7 @@ def save_features(model, tokenizer, device):
             for input_ids, input_mask, example_indices in eval_dataloader:
                 input_ids   = input_ids.to(device)    # batch_sized input_ids tensor
                 input_mask  = input_mask.to(device)   # batch_sized input_mask tensor
-                all_outputs = model(input_ids=input_ids)#, attention_mask=input_mask) # token_type_ids=None,
+                all_outputs = model(input_ids=input_ids)#, token_type_ids=None, attention_mask=input_mask) 
                 enc_layers  = all_outputs.hidden_states
                 #print("***************************************************")
                 #print(model_checkpoint, " => Num layers:", len(enc_layers))
@@ -211,7 +211,7 @@ if __name__ == '__main__':
 
                         config    = BartConfig.from_pretrained(modelname, output_hidden_states=True)
                         tokenizer = BartTokenizer.from_pretrained("facebook/bart-base", cache_dir="/tmp")
-                        model     = BartForConditionalGeneration.from_pretrained(modelname, config=config, cache_dir="/tmp") 
+                        model     = AutoModelForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="/tmp") 
 
                     elif model_checkpoint in ["JavaBERT-mini"]:
 
