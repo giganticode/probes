@@ -215,13 +215,13 @@ if __name__ == '__main__':
 
                     elif model_checkpoint in ["PLBART-mtjava", "PLBART-large"]:
 
-                        config    = AutoConfig.from_pretrained(modelname, output_hidden_states=True)
+                        config    = BartConfig.from_pretrained(modelname, output_hidden_states=True)
                         tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="/tmp")
                         model     = AutoModelForSeq2SeqLM.from_pretrained(modelname, config=config, cache_dir="/tmp") 
 
                     elif model_checkpoint in ["JavaBERT-mini"]:
 
-                        config    = BartConfig.from_pretrained(modelname, output_hidden_states=True)
+                        config    = AutoConfig.from_pretrained(modelname, output_hidden_states=True)
                         tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="/tmp")
                         model     = AutoModelForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="/tmp")                        
 
