@@ -10,7 +10,7 @@ from pathlib import Path
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoConfig
 from transformers import BertTokenizer, BertModel, BertConfig
-from transformers import BartTokenizer, BartModel, BartForSequenceClassification, BartForConditionalGeneration, AutoModelForSeq2SeqLM, BartConfig
+from transformers import BartTokenizer, AutoModelForSeq2SeqLM, BartConfig
 from transformers import RobertaTokenizer, RobertaForSequenceClassification, RobertaConfig
 
 class InputExample(object):
@@ -182,7 +182,9 @@ if __name__ == '__main__':
         for shuffle_kind in shuffle_kinds:
             for model_checkpoint in list(model_checkpoints.keys()):
                 for label_count in label_counts:
+                    print("********")
                     print(f"Processing for task >> {task_code} >> {shuffle_kind}:{model_checkpoint} for {label_count}")
+                    print("********")
 
                     text_dataset  = sys.path[0] + '/data/datasets_'+ task_code +'/'+ task_code +'_'+ shuffle_kind +'_'+ label_count +'.txt'
                     json_features = sys.path[0] + '/data/datasets_'+ task_code +'/'+ shuffle_kind +'/'+ model_checkpoint +'_features_'+ label_count +'.json'
@@ -213,8 +215,8 @@ if __name__ == '__main__':
 
                     elif model_checkpoint in ["PLBART-mtjava", "PLBART-large"]:
 
-                        config    = BartConfig.from_pretrained(modelname, output_hidden_states=True)
-                        tokenizer = BartTokenizer.from_pretrained("facebook/bart-base", cache_dir="/tmp")
+                        config    = AutoConfig.from_pretrained(modelname, output_hidden_states=True)
+                        tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="/tmp")
                         model     = AutoModelForSeq2SeqLM.from_pretrained(modelname, config=config, cache_dir="/tmp") 
 
                     elif model_checkpoint in ["JavaBERT-mini"]:
@@ -223,9 +225,14 @@ if __name__ == '__main__':
                         tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="/tmp")
                         model     = AutoModelForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="/tmp")                        
 
+                    print("-----")
+                    print("Vocabulary  Size:\t", model.config.vocab_size)
+                    print("Tokenizer Length:\t", len(tokenizer))
+                    print("-----")
                     model.to(device)
                     model.eval()
                     save_features(model, tokenizer, device)
+                    print("********")
 
 
 
