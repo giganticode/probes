@@ -153,7 +153,7 @@ def save_features(model, tokenizer, device):
 
 if __name__ == '__main__':
 
-    task_codes    = ['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
+    task_codes    = ['VCT', 'VCU'] #['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
     shuffle_kinds = ['ORIG']
     label_counts  = ['100', '1k', '10k']
 
@@ -204,26 +204,26 @@ if __name__ == '__main__':
                     if model_checkpoint == "BERT":
 
                         config    = BertConfig.from_pretrained(modelname, output_hidden_states=True)
-                        tokenizer = BertTokenizer.from_pretrained(modelname, do_lower_case=True, cache_dir="/tmp")
-                        model     = BertModel.from_pretrained(modelname, config=config, cache_dir="/tmp")
+                        tokenizer = BertTokenizer.from_pretrained(modelname, do_lower_case=True, cache_dir="~/tmp")
+                        model     = BertModel.from_pretrained(modelname, config=config, cache_dir="~/tmp")
 
                     elif model_checkpoint in ["CodeBERT", "CodeBERTa", "GraphCodeBERT", "CodeT5"]:
                         
                         config    = RobertaConfig.from_pretrained(modelname, output_hidden_states=True)
-                        tokenizer = RobertaTokenizer.from_pretrained(modelname, cache_dir="/tmp")
-                        model     = RobertaForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="/tmp")
+                        tokenizer = RobertaTokenizer.from_pretrained(modelname, cache_dir="~/tmp")
+                        model     = RobertaForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="~/tmp")
 
                     elif model_checkpoint in ["PLBART-mtjava", "PLBART-large"]:
 
                         config    = AutoConfig.from_pretrained(modelname, output_hidden_states=True)
-                        tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="/tmp")
-                        model     = AutoModelForSeq2SeqLM.from_pretrained(modelname, config=config, cache_dir="/tmp") 
+                        tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="~/tmp")
+                        model     = AutoModelForSeq2SeqLM.from_pretrained(modelname, config=config, cache_dir="~/tmp") 
 
                     elif model_checkpoint in ["JavaBERT-mini"]:
 
                         config    = AutoConfig.from_pretrained(modelname, output_hidden_states=True)
-                        tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="/tmp")
-                        model     = AutoModelForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="/tmp")                        
+                        tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="~/tmp")
+                        model     = AutoModelForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="~/tmp")                        
 
                     print("-----")
                     print("Vocabulary  Size:\t", model.config.vocab_size)
