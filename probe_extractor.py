@@ -213,13 +213,13 @@ if __name__ == '__main__':
                         tokenizer = RobertaTokenizer.from_pretrained(modelname, cache_dir="~/tmp")
                         model     = RobertaForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="~/tmp")
 
-                    elif model_checkpoint in ["PLBART-mtjava", "PLBART-large"]:
+                    elif model_checkpoint in ["PLBART-mtjava", "PLBART-large", "CodeT5"]:
 
                         config    = AutoConfig.from_pretrained(modelname, output_hidden_states=True)
                         tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="~/tmp")
                         model     = AutoModelForSeq2SeqLM.from_pretrained(modelname, config=config, cache_dir="~/tmp") 
 
-                    elif model_checkpoint in ["JavaBERT-mini", "CodeT5"]:
+                    elif model_checkpoint in ["JavaBERT-mini"]:
 
                         config    = AutoConfig.from_pretrained(modelname, output_hidden_states=True)
                         tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="~/tmp")
