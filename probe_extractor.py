@@ -108,9 +108,12 @@ def save_features(model, tokenizer, device):
             for input_ids, input_mask, example_indices in eval_dataloader:
                 input_ids   = input_ids.to(device)    # batch_sized input_ids tensor
                 input_mask  = input_mask.to(device)   # batch_sized input_mask tensor
-                if "plbart" in model.__dict__["config"]._name_or_path or "codet5" in model.__dict__["config"]._name_or_path:
-                    all_outputs = model(input_ids=input_ids, decoder_input_ids=input_ids)#, token_type_ids=None, attention_mask=input_mask) 
+                if "plbart" in model.__dict__["config"]._name_or_path:
+                    all_outputs = model(input_ids=input_ids)#, token_type_ids=None, attention_mask=input_mask) 
                     enc_layers  = all_outputs.encoder_hidden_states 
+                elif "codet5" in model.__dict__["config"]._name_or_path:
+                    all_outputs = model(input_ids=input_ids, decoder_input_ids=input_ids)#, token_type_ids=None, attention_mask=input_mask) 
+                    enc_layers  = all_outputs.encoder_hidden_states                     
                 else:
                     all_outputs = model(input_ids=input_ids, token_type_ids=None, attention_mask=input_mask) 
                     enc_layers  = all_outputs.hidden_states                     
@@ -153,7 +156,7 @@ def save_features(model, tokenizer, device):
 
 if __name__ == '__main__':
 
-    task_codes    = ['CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
+    task_codes    = ['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
     shuffle_kinds = ['ORIG']
     label_counts  = ['100', '1k', '10k']
 
@@ -162,7 +165,7 @@ if __name__ == '__main__':
                          #"CodeBERTa":     "huggingface/CodeBERTa-small-v1", 
                          #"GraphCodeBERT": "microsoft/graphcodebert-base",
                          "CodeT5":        "Salesforce/codet5-base",
-                         #"JavaBERT-mini": "anjandash/JavaBERT-mini",
+                         "JavaBERT-mini": "anjandash/JavaBERT-mini",
                          #"PLBART-mtjava": "uclanlp/plbart-multi_task-java",
                          #"PLBART-large":  "uclanlp/plbart-large",
                          }
@@ -172,7 +175,7 @@ if __name__ == '__main__':
                             #"CodeBERTa":     512,
                             #"GraphCodeBERT": 512,
                             "CodeT5":         512,
-                            #"JavaBERT-mini":  512,
+                            "JavaBERT-mini":  512,
                             #"PLBART-mtjava":  1024,
                             #"PLBART-large":   1024,                            
                             }
@@ -199,7 +202,7 @@ if __name__ == '__main__':
                     model_max_seq_length = model_max_seq_lengths.get(model_checkpoint, None)
 
                     device    = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-                    batchsize = 4 #8 for 512 tokens 4 for 1024 tokens
+                    batchsize = 8 #8 for 512 tokens 4 for 1024 tokens
 
                     if model_checkpoint == "BERT":
 
