@@ -108,7 +108,7 @@ def save_features(model, tokenizer, device):
             for input_ids, input_mask, example_indices in eval_dataloader:
                 input_ids   = input_ids.to(device)    # batch_sized input_ids tensor
                 input_mask  = input_mask.to(device)   # batch_sized input_mask tensor
-                if "plbart" in model.__dict__["config"]._name_or_path:
+                if "plbart" in model.__dict__["config"]._name_or_path or "codet5" in model.__dict__["config"]._name_or_path:
                     all_outputs = model(input_ids=input_ids)#, token_type_ids=None, attention_mask=input_mask) 
                     enc_layers  = all_outputs.encoder_hidden_states 
                 else:
