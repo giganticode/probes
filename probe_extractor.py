@@ -162,7 +162,7 @@ if __name__ == '__main__':
                          #"CodeBERTa":     "huggingface/CodeBERTa-small-v1", 
                          #"GraphCodeBERT": "microsoft/graphcodebert-base",
                          "CodeT5":        "Salesforce/codet5-base",
-                         "JavaBERT-mini": "anjandash/JavaBERT-mini",
+                         #"JavaBERT-mini": "anjandash/JavaBERT-mini",
                          #"PLBART-mtjava": "uclanlp/plbart-multi_task-java",
                          #"PLBART-large":  "uclanlp/plbart-large",
                          }
@@ -172,7 +172,7 @@ if __name__ == '__main__':
                             #"CodeBERTa":     512,
                             #"GraphCodeBERT": 512,
                             "CodeT5":         512,
-                            "JavaBERT-mini":  512,
+                            #"JavaBERT-mini":  512,
                             #"PLBART-mtjava":  1024,
                             #"PLBART-large":   1024,                            
                             }
@@ -207,7 +207,7 @@ if __name__ == '__main__':
                         tokenizer = BertTokenizer.from_pretrained(modelname, do_lower_case=True, cache_dir="~/tmp")
                         model     = BertModel.from_pretrained(modelname, config=config, cache_dir="~/tmp")
 
-                    elif model_checkpoint in ["CodeBERT", "CodeBERTa", "GraphCodeBERT", "CodeT5"]:
+                    elif model_checkpoint in ["CodeBERT", "CodeBERTa", "GraphCodeBERT"]:
                         
                         config    = RobertaConfig.from_pretrained(modelname, output_hidden_states=True)
                         tokenizer = RobertaTokenizer.from_pretrained(modelname, cache_dir="~/tmp")
@@ -219,7 +219,7 @@ if __name__ == '__main__':
                         tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="~/tmp")
                         model     = AutoModelForSeq2SeqLM.from_pretrained(modelname, config=config, cache_dir="~/tmp") 
 
-                    elif model_checkpoint in ["JavaBERT-mini"]:
+                    elif model_checkpoint in ["JavaBERT-mini", "CodeT5"]:
 
                         config    = AutoConfig.from_pretrained(modelname, output_hidden_states=True)
                         tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="~/tmp")
