@@ -153,7 +153,7 @@ def save_features(model, tokenizer, device):
 
 if __name__ == '__main__':
 
-    task_codes    = ['VCT', 'VCU'] #['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
+    task_codes    = ['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
     shuffle_kinds = ['ORIG']
     label_counts  = ['100', '1k', '10k']
 
@@ -161,20 +161,20 @@ if __name__ == '__main__':
                          #"CodeBERT":      "microsoft/codebert-base",
                          #"CodeBERTa":     "huggingface/CodeBERTa-small-v1", 
                          #"GraphCodeBERT": "microsoft/graphcodebert-base",
-                         #"CodeT5":        "Salesforce/codet5-base",
-                         #"JavaBERT-mini": "anjandash/JavaBERT-mini",
-                         "PLBART-mtjava": "uclanlp/plbart-multi_task-java",
-                         "PLBART-large":  "uclanlp/plbart-large",
+                         "CodeT5":        "Salesforce/codet5-base",
+                         "JavaBERT-mini": "anjandash/JavaBERT-mini",
+                         #"PLBART-mtjava": "uclanlp/plbart-multi_task-java",
+                         #"PLBART-large":  "uclanlp/plbart-large",
                          }
 
     model_max_seq_lengths = {#"BERT":         512,
                             #"CodeBERT":      256, 
                             #"CodeBERTa":     512,
                             #"GraphCodeBERT": 512,
-                            #"CodeT5":         512,
-                            #"JavaBERT-mini":  512,
-                            "PLBART-mtjava":  1024,
-                            "PLBART-large":   1024,                            
+                            "CodeT5":         512,
+                            "JavaBERT-mini":  512,
+                            #"PLBART-mtjava":  1024,
+                            #"PLBART-large":   1024,                            
                             }
 
 
