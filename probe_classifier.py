@@ -123,8 +123,8 @@ def classify_and_predict(train_X, train_y, dev_X, dev_y, test_X, test_y, feat_di
     pred = [id2cat[item] for item in pred]
 
     orig_pred = (zip(orig, pred))
-    orig = [int(9) if item == '9X' else int(item) for item in orig]
-    pred = [int(9) if item == '9X' else int(item) for item in pred]
+    orig = [int(item[0]) if len(item) > 1 else int(item) for item in orig]
+    pred = [int(item[0]) if len(item) > 1 else int(item) for item in pred]
     test_acc = metrics.r2_score(orig, pred)
 
     # outpatx = sys.path[0] + '/outputs/' + task_code + '/' + model_kind + '+' + head + '_' + str(label_count) + '_' + shuffle_kind + '_' + str(eval_layer) + '.csv'
@@ -175,7 +175,7 @@ if __name__ == "__main__":
                     }
 
     label_counts  = ['100', '1k', '10k']
-    task_codes    = ['CPX', 'CSC', 'LEN', 'MXN', 'NML', 'NMS', 'OCT', 'OCU', 'VCT', 'VCU'] #['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
+    task_codes    = ['CPX', 'CSC', 'MXN', 'NML', 'NMS', 'OCT', 'OCU', 'VCT', 'VCU'] #['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
     nhids         = [0] # number of hidden layers
 
     for task_code in task_codes:
