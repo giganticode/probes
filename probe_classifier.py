@@ -163,15 +163,15 @@ if __name__ == "__main__":
 
     shuffle_kinds = ['ORIG']
     model_kinds   = {
-                    #'BERT':         13, 
-                    #'CodeBERT':      13,
-                    #'CodeBERTa':      7,
-                    #'GraphCodeBERT': 13,
+                    'BERT':          13, 
+                    'CodeBERT':      13,
+                    'CodeBERTa':      7,
+                    'GraphCodeBERT': 13,
 
-                    'CodeT5':        13,
-                    'JavaBERT-mini': 13,
-                    "PLBART-mtjava":  7,
-                    "PLBART-large":  13,                       
+                    # 'CodeT5':        13,
+                    # 'JavaBERT-mini': 13,
+                    # "PLBART-mtjava":  7,
+                    # "PLBART-large":  13,                       
                     }
 
     label_counts  = ['100', '1k', '10k']
