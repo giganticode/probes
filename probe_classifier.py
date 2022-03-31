@@ -123,9 +123,9 @@ def classify_and_predict(train_X, train_y, dev_X, dev_y, test_X, test_y, feat_di
     pred = [id2cat[item] for item in pred]
 
     orig_pred = (zip(orig, pred))
-    orig = [int(item[0]) if len(item) > 1 else int(item) for item in orig]
-    pred = [int(item[0]) if len(item) > 1 else int(item) for item in pred]
-    test_acc = metrics.r2_score(orig, pred)
+    # orig = [int(item[0]) if len(item) > 1 else int(item) for item in orig]
+    # pred = [int(item[0]) if len(item) > 1 else int(item) for item in pred]
+    # test_acc = metrics.r2_score(orig, pred)
 
     outpatx = sys.path[0] + '/outputs/' + task_code + '/' + model_kind + '+' + head + '_' + str(label_count) + '_' + shuffle_kind + '_' + str(eval_layer) + '.csv'
     outpath = Path(outpatx)
