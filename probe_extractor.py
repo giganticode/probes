@@ -160,25 +160,27 @@ if __name__ == '__main__':
     shuffle_kinds = ['ORIG']
     label_counts  = ['100', '1k', '10k']
 
-    model_checkpoints = {#"BERT":          "bert-base-uncased", 
-                         #"CodeBERT":      "microsoft/codebert-base",
-                         #"CodeBERTa":     "huggingface/CodeBERTa-small-v1", 
-                         #"GraphCodeBERT": "microsoft/graphcodebert-base",
-                         "CodeT5":        "Salesforce/codet5-base",
-                         "JavaBERT-mini": "anjandash/JavaBERT-mini",
-                         #"PLBART-mtjava": "uclanlp/plbart-multi_task-java",
-                         #"PLBART-large":  "uclanlp/plbart-large",
-                         }
+    model_checkpoints = {
+        "BERT":          "bert-base-uncased", 
+        "CodeBERT":      "microsoft/codebert-base",
+        "CodeBERTa":     "huggingface/CodeBERTa-small-v1", 
+        "GraphCodeBERT": "microsoft/graphcodebert-base",
+        "CodeT5":        "Salesforce/codet5-base",
+        "JavaBERT-mini": "anjandash/JavaBERT-mini",
+        "PLBART-mtjava": "uclanlp/plbart-multi_task-java",
+        "PLBART-large":  "uclanlp/plbart-large",
+    }
 
-    model_max_seq_lengths = {#"BERT":         512,
-                            #"CodeBERT":      256, 
-                            #"CodeBERTa":     512,
-                            #"GraphCodeBERT": 512,
-                            "CodeT5":         512,
-                            "JavaBERT-mini":  512,
-                            #"PLBART-mtjava":  1024,
-                            #"PLBART-large":   1024,                            
-                            }
+    model_max_seq_lengths = {
+        "BERT":         512,
+        "CodeBERT":      256, 
+        "CodeBERTa":     512,
+        "GraphCodeBERT": 512,
+        "CodeT5":         512,
+        "JavaBERT-mini":  512,
+        "PLBART-mtjava":  1024,
+        "PLBART-large":   1024,                            
+    }
 
 
     for task_code in task_codes:

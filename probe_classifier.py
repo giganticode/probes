@@ -127,34 +127,34 @@ def classify_and_predict(train_X, train_y, dev_X, dev_y, test_X, test_y, feat_di
     pred = [int(item[0]) if len(item) > 1 else int(item) for item in pred]
     test_acc = metrics.r2_score(orig, pred)
 
-    # outpatx = sys.path[0] + '/outputs/' + task_code + '/' + model_kind + '+' + head + '_' + str(label_count) + '_' + shuffle_kind + '_' + str(eval_layer) + '.csv'
-    # outpath = Path(outpatx)
-    # outpath.parent.mkdir(parents=True, exist_ok=True) 
+    outpatx = sys.path[0] + '/outputs/' + task_code + '/' + model_kind + '+' + head + '_' + str(label_count) + '_' + shuffle_kind + '_' + str(eval_layer) + '.csv'
+    outpath = Path(outpatx)
+    outpath.parent.mkdir(parents=True, exist_ok=True) 
 
-    # with open(outpath, 'w+') as wf:
-    #     csv_writer = csv.writer(wf)
-    #     csv_writer.writerow(['orig', 'pred'])
+    with open(outpath, 'w+') as wf:
+        csv_writer = csv.writer(wf)
+        csv_writer.writerow(['orig', 'pred'])
 
-    #     for orig_item, pred_item in orig_pred:
-    #         csv_writer.writerow([orig_item, pred_item])
+        for orig_item, pred_item in orig_pred:
+            csv_writer.writerow([orig_item, pred_item])
 
-    # # confusion matrix
-    # plt.figure()
-    # labels = list(id2cat.values())
-    # labels.sort()
+    # confusion matrix
+    plt.figure()
+    labels = list(id2cat.values())
+    labels.sort()
 
-    # cf_matrix = metrics.confusion_matrix(orig, pred, labels=labels)
-    # ax = sns.heatmap(cf_matrix, cmap='RdYlGn', annot=True, yticklabels=labels, fmt='g', square=2, linecolor="white")    
+    cf_matrix = metrics.confusion_matrix(orig, pred, labels=labels)
+    ax = sns.heatmap(cf_matrix, cmap='RdYlGn', annot=True, yticklabels=labels, fmt='g', square=2, linecolor="white")    
 
-    # ax.figure.subplots_adjust(left = 0.3) 
-    # ax.set_title('Confusion Matrix')
-    # ax.set_xlabel('PRED Labels')
-    # ax.set_ylabel('ORIG Labels')
+    ax.figure.subplots_adjust(left = 0.3) 
+    ax.set_title('Confusion Matrix')
+    ax.set_xlabel('PRED Labels')
+    ax.set_ylabel('ORIG Labels')
 
-    # ax.xaxis.set_ticklabels(labels) 
-    # ax.yaxis.set_ticklabels(labels)
-    # ax.figure.savefig(outpatx[:-4]+'_CFMX.png')   
-    # plt.close() 
+    ax.xaxis.set_ticklabels(labels) 
+    ax.yaxis.set_ticklabels(labels)
+    ax.figure.savefig(outpatx[:-4]+'_CFMX.png')   
+    plt.close() 
 
     print(test_acc, end='\t')
     return test_acc     
@@ -168,14 +168,14 @@ if __name__ == "__main__":
                     'CodeBERTa':      7,
                     'GraphCodeBERT': 13,
 
-                    # 'CodeT5':        13,
-                    # 'JavaBERT-mini': 13,
-                    # "PLBART-mtjava":  7,
-                    # "PLBART-large":  13,                       
+                    'CodeT5':        13,
+                    'JavaBERT-mini': 13,
+                    "PLBART-mtjava":  7,
+                    "PLBART-large":  13,                       
                     }
 
     label_counts  = ['100', '1k', '10k']
-    task_codes    = ['CPX', 'CSC', 'MXN', 'NML', 'NMS', 'OCT', 'OCU', 'VCT', 'VCU'] #['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
+    task_codes    = ['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
     nhids         = [0] # number of hidden layers
 
     for task_code in task_codes:
