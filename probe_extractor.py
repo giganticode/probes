@@ -105,7 +105,7 @@ def save_features(model, tokenizer, device):
     pbar = tqdm(total=len(examples)//batchsize)
     with open(json_features, "w") as writer:
         with torch.no_grad():
-            for input_ids, input_mask, example_indices in eval_dataloader:
+            for input_ids, input_mask, example_indices in eval_dataloader: # batch_sized input_ids, input_mask, example_indices tensor
                 input_ids   = input_ids.to(device)    # batch_sized input_ids tensor
                 input_mask  = input_mask.to(device)   # batch_sized input_mask tensor
                 if "plbart" in model.__dict__["config"]._name_or_path:
@@ -116,7 +116,7 @@ def save_features(model, tokenizer, device):
                     enc_layers  = all_outputs.encoder_hidden_states                     
                 else:
                     all_outputs = model(input_ids=input_ids, token_type_ids=None, attention_mask=input_mask) 
-                    enc_layers  = all_outputs.hidden_states                     
+                    enc_layers  = all_outputs.hidden_states          
                 #print("***************************************************")
                 #print(model_checkpoint, " => Num layers:", len(enc_layers))
                 #print("***************************************************")
@@ -156,7 +156,7 @@ def save_features(model, tokenizer, device):
 
 if __name__ == '__main__':
 
-    task_codes    = ['IDT'] #['AST', 'CPX', 'CSC', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
+    task_codes    = ['IDF'] #['AST', 'CPX', 'CSC', 'IDF', 'IDT', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
     shuffle_kinds = ['ORIG']
     label_counts  = ['100', '1k', '10k']
 
