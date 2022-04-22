@@ -13,10 +13,6 @@ from transformers import BertTokenizer, BertModel, BertConfig
 from transformers import BartTokenizer, AutoModelForSeq2SeqLM, BartConfig
 from transformers import RobertaTokenizer, RobertaForSequenceClassification, RobertaConfig
 
-import os
-os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2,3"
-
 class InputExample(object):
     def __init__(self, text, unique_id):
         self.text = text
