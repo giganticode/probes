@@ -8,7 +8,7 @@ import collections
 from tqdm import tqdm
 from pathlib import Path
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
-from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoConfig
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoModelForCausalLM, AutoConfig
 from transformers import BertTokenizer, BertModel, BertConfig
 from transformers import BartTokenizer, AutoModelForSeq2SeqLM, BartConfig
 from transformers import RobertaTokenizer, RobertaForSequenceClassification, RobertaConfig
@@ -161,25 +161,28 @@ if __name__ == '__main__':
     label_counts  = ['100', '1k', '10k']
 
     model_checkpoints = {
-        "BERT":          "bert-base-uncased", 
-        "CodeBERT":      "microsoft/codebert-base",
-        "CodeBERTa":     "huggingface/CodeBERTa-small-v1", 
-        "GraphCodeBERT": "microsoft/graphcodebert-base",
-        "CodeT5":        "Salesforce/codet5-base",
-        "JavaBERT-mini": "anjandash/JavaBERT-mini",
-        "PLBART-mtjava": "uclanlp/plbart-multi_task-java",
-        "PLBART-large":  "uclanlp/plbart-large",
+        # "BERT":          "bert-base-uncased", 
+        # "CodeBERT":      "microsoft/codebert-base",
+        # "CodeBERTa":     "huggingface/CodeBERTa-small-v1", 
+        # "GraphCodeBERT": "microsoft/graphcodebert-base",
+        # "CodeT5":        "Salesforce/codet5-base",
+        # "JavaBERT-mini": "anjandash/JavaBERT-mini",
+        # "PLBART-mtjava": "uclanlp/plbart-multi_task-java",
+        # "PLBART-large":  "uclanlp/plbart-large",
+        "GPT-J-6B":      "EleutherAI/gpt-j-6B",
     }
 
     model_max_seq_lengths = {
-        "BERT":         512,
-        "CodeBERT":      256, 
-        "CodeBERTa":     512,
-        "GraphCodeBERT": 512,
-        "CodeT5":         512,
-        "JavaBERT-mini":  512,
-        "PLBART-mtjava":  1024,
-        "PLBART-large":   1024,                            
+        # "BERT":           512,
+        # "CodeBERT":       256, 
+        # "CodeBERTa":      512,
+        # "GraphCodeBERT":  512,
+        # "CodeT5":         512,
+        # "JavaBERT-mini":  512,
+        # "PLBART-mtjava":  1024,
+        # "PLBART-large":   1024,    
+        "GPT-J-6B":       2048,
+
     }
 
 
@@ -228,7 +231,13 @@ if __name__ == '__main__':
 
                         config    = AutoConfig.from_pretrained(modelname, output_hidden_states=True)
                         tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="~/tmp")
-                        model     = AutoModelForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="~/tmp")                        
+                        model     = AutoModelForSequenceClassification.from_pretrained(modelname, config=config, cache_dir="~/tmp")   
+
+                    elif model_checkpoint in ["GPT-J-6B"]:
+
+                        config    = AutoConfig.from_pretrained(modelname, output_hidden_states=True)
+                        tokenizer = AutoTokenizer.from_pretrained(modelname, cache_dir="~/tmp")
+                        model     = AutoModelForCausalLM.from_pretrained(modelname, config=config, cache_dir="~/tmp")                                                
 
                     print("-----")
                     print("Vocabulary  Size:\t", model.config.vocab_size)
