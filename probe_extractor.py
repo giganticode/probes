@@ -207,7 +207,7 @@ if __name__ == '__main__':
                     model_max_seq_length = model_max_seq_lengths.get(model_checkpoint, None)
 
                     device    = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-                    batchsize = 2 #8 for 512 tokens 4 for 1024 tokens
+                    batchsize = 1 #8 for 512 tokens 4 for 1024 tokens
 
                     if model_checkpoint == "BERT":
 
