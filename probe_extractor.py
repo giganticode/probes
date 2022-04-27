@@ -156,32 +156,32 @@ def save_features(model, tokenizer, device):
 
 if __name__ == '__main__':
 
-    task_codes    = ['AST', 'CPX', 'CSC', 'IDF', 'IDT', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
+    task_codes    = ['CPT'] #['AST', 'CPX', 'CSC', 'IDF', 'IDT', 'JBL', 'JFT', 'JMB', 'LEN', 'MXN', 'NML', 'NMS', 'NPT', 'OCT', 'OCU', 'REA', 'SCK', 'SRI', 'SRK', 'TAN', 'TYP', 'VCT', 'VCU']
     shuffle_kinds = ['ORIG']
-    label_counts  = ['100', '1k', '10k']
+    label_counts  = ['200', '2k', '20k']
 
     model_checkpoints = {
-        # "BERT":          "bert-base-uncased", 
-        # "CodeBERT":      "microsoft/codebert-base",
-        # "CodeBERTa":     "huggingface/CodeBERTa-small-v1", 
-        # "GraphCodeBERT": "microsoft/graphcodebert-base",
-        # "CodeT5":        "Salesforce/codet5-base",
-        # "JavaBERT-mini": "anjandash/JavaBERT-mini",
-        # "PLBART-mtjava": "uclanlp/plbart-multi_task-java",
-        # "PLBART-large":  "uclanlp/plbart-large",
-        "GPT-J-6B":      "EleutherAI/gpt-j-6B",
+        "BERT":          "bert-base-uncased", 
+        "CodeBERT":      "microsoft/codebert-base",
+        "CodeBERTa":     "huggingface/CodeBERTa-small-v1", 
+        "GraphCodeBERT": "microsoft/graphcodebert-base",
+        "CodeT5":        "Salesforce/codet5-base",
+        "JavaBERT-mini": "anjandash/JavaBERT-mini",
+        "PLBART-mtjava": "uclanlp/plbart-multi_task-java",
+        "PLBART-large":  "uclanlp/plbart-large",
+        #"GPT-J-6B":      "EleutherAI/gpt-j-6B",
     }
 
     model_max_seq_lengths = {
-        # "BERT":           512,
-        # "CodeBERT":       256, 
-        # "CodeBERTa":      512,
-        # "GraphCodeBERT":  512,
-        # "CodeT5":         512,
-        # "JavaBERT-mini":  512,
-        # "PLBART-mtjava":  1024,
-        # "PLBART-large":   1024,    
-        "GPT-J-6B":       2048,
+        "BERT":           512,
+        "CodeBERT":       256, 
+        "CodeBERTa":      512,
+        "GraphCodeBERT":  512,
+        "CodeT5":         512,
+        "JavaBERT-mini":  512,
+        "PLBART-mtjava":  1024,
+        "PLBART-large":   1024,    
+        #"GPT-J-6B":       2048,
 
     }
 
